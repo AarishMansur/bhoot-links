@@ -75,3 +75,18 @@ describe("PDF line-wrap repair", () => {
     expect(ls.map((l) => l.url)).toContain("https://www.youtube.com/watch?v=PqFKRqpHrjw");
   });
 });
+
+describe("dropTruncated", async () => {
+  const { dropTruncated } = await import("../src/extract.js");
+  const mk = (url: string, page = 1) => ({ id: url, url, anchorText: "", context: "", page });
+  it("drops a copy cut off mid-word when the whole link is on the same page", () => {
+    const out = dropTruncated([mk("https://x.com/toc/lex_auth_0138_s"), mk("https://x.com/toc/lex_auth_0138_shared/overview")]);
+    expect(out.map((l) => l.url)).toEqual(["https://x.com/toc/lex_auth_0138_shared/overview"]);
+  });
+  it("keeps a site root next to a deep link", () => {
+    expect(dropTruncated([mk("https://nptel.ac.in/"), mk("https://nptel.ac.in/courses/1")])).toHaveLength(2);
+  });
+  it("keeps links on different pages", () => {
+    expect(dropTruncated([mk("https://x.com/ab", 1), mk("https://x.com/abc", 2)])).toHaveLength(2);
+  });
+});

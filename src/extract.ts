@@ -51,6 +51,20 @@ function dedupe(links: ExtractedLink[]): ExtractedLink[] {
   return [...seen.values()];
 }
 
+/**
+ * A URL wrapped mid-word in the PDF text ("..._s" + newline + "hared/overview")
+ * shows up both truncated (from the text) and whole (from the link annotation).
+ * Drop the truncated copy when a longer link on the same page continues it mid-token.
+ */
+export function dropTruncated(links: ExtractedLink[]): ExtractedLink[] {
+  return links.filter(
+    (a) =>
+      !links.some(
+        (b) => b !== a && b.page === a.page && b.url.length > a.url.length && b.url.startsWith(a.url) && !a.url.endsWith("/") && /[\w%-]/.test(b.url[a.url.length]),
+      ),
+  );
+}
+
 /** Links typed into plain text (what you get from most syllabus PDFs). */
 export function extractFromText(raw: string, page?: number): ExtractedLink[] {
   const text = raw
@@ -134,7 +148,7 @@ export async function extractFromPdf(data: Uint8Array): Promise<PdfExtract> {
     } catch {
       /* annotations are a bonus, plain text links are enough */
     }
-    return { links: dedupe(links), pages: text.total, text: text.text };
+    return { links: dropTruncated(dedupe(links)), pages: text.total, text: text.text };
   } finally {
     await parser.destroy();
   }

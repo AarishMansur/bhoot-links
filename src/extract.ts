@@ -17,6 +17,8 @@ export function cleanUrl(raw: string): string | null {
     if (u.endsWith(")") && (u.match(/\(/g)?.length ?? 0) >= (u.match(/\)/g)?.length ?? 0)) break;
     u = u.slice(0, -1);
   }
+  // "watch?v=PqFKRqpHrjwFor loop:" in a PDF: YouTube ids are 11 chars, the rest is the next word
+  u = u.replace(/([?&]v=[\w-]{11})([A-Z][a-z]{1,12})$/, "$1");
   if (/^www\./i.test(u)) u = "http://" + u;
   try {
     const parsed = new URL(u);
@@ -51,7 +53,11 @@ function dedupe(links: ExtractedLink[]): ExtractedLink[] {
 
 /** Links typed into plain text (what you get from most syllabus PDFs). */
 export function extractFromText(raw: string, page?: number): ExtractedLink[] {
-  const text = raw.replace(/[ \t\r\f\v]+/g, " ").replace(/\n\s*/g, "\n");
+  const text = raw
+    .replace(/[ \t\r\f\v]+/g, " ")
+    .replace(/\n\s*/g, "\n")
+    // PDF line wraps split long URLs right after a "-", "=", "&", "?" or "_"; glue them back
+    .replace(/(https?:\/\/\S*[-=&?_])\n([\w\-&=?%.\/#~]+)/g, "$1$2");
   const out: ExtractedLink[] = [];
   for (const m of text.matchAll(URL_RE)) {
     const url = cleanUrl(m[0]);

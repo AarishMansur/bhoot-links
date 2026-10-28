@@ -51,3 +51,27 @@ describe("extractFromHtml", () => {
     expect(lex.context).toContain("Compiler Design");
   });
 });
+
+describe("youTubeOembedTarget", async () => {
+  const { youTubeOembedTarget } = await import("../src/youtube.js");
+  it("accepts watch, short and playlist links", () => {
+    expect(youTubeOembedTarget("https://www.youtube.com/watch?v=3Xo6P_V-qns&t=201s")).toBeTruthy();
+    expect(youTubeOembedTarget("https://youtu.be/abc123")).toBeTruthy();
+    expect(youTubeOembedTarget("https://www.youtube.com/playlist?list=PL123")).toBeTruthy();
+  });
+  it("ignores channels and other sites", () => {
+    expect(youTubeOembedTarget("https://www.youtube.com/@nptelhrd")).toBeNull();
+    expect(youTubeOembedTarget("https://nptel.ac.in/courses/106105171")).toBeNull();
+  });
+});
+
+describe("PDF line-wrap repair", () => {
+  it("glues a URL that was wrapped after a hyphen", () => {
+    const [l] = extractFromText("3. https://www.youtube.com/watch?v=783KAB-\n   tuE4&list=PLIemF3uozcAK\n4. next");
+    expect(l.url).toBe("https://www.youtube.com/watch?v=783KAB-tuE4&list=PLIemF3uozcAK");
+  });
+  it("cuts the next word off a YouTube id", () => {
+    const ls = extractFromText("https://www.youtube.com/watch?v=PqFKRqpHrjwFor loop: https://www.youtube.com/watch?v=0ZvaDa8eT5s");
+    expect(ls.map((l) => l.url)).toContain("https://www.youtube.com/watch?v=PqFKRqpHrjw");
+  });
+});

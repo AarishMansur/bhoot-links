@@ -23,6 +23,8 @@ export function getConfig() {
     probeTimeoutMs: num(env.PROBE_TIMEOUT_MS, 10_000),
     perHostDelayMs: num(env.PER_HOST_DELAY_MS, 1_000),
     probeConcurrency: num(env.PROBE_CONCURRENCY, 6),
+    /** try https:// first for http:// links (status 0 hop in the chain marks the upgrade) */
+    httpUpgrade: env.HTTP_UPGRADE === "1",
     maxRedirects: num(env.MAX_REDIRECTS, 8),
     browserProvider: (env.BROWSER_PROVIDER ?? (mock ? "mock" : "local")) as "browserbase" | "local" | "mock" | "off",
     maxBbSessions: num(env.MAX_BB_SESSIONS, 1),

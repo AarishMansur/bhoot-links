@@ -1,3 +1,4 @@
+import zlib from "node:zlib";
 import { lookup as dnsLookup } from "node:dns";
 import { Agent, request } from "undici";
 
@@ -50,11 +51,16 @@ export async function getText(url: string, opts: { timeoutMs?: number; maxBytes?
     headers: { "user-agent": cfg.userAgent, accept: "text/html,application/xhtml+xml,*/*;q=0.8", ...opts.headers },
     signal: AbortSignal.timeout(opts.timeoutMs ?? cfg.probeTimeoutMs),
   });
-  const body = await readCapped(res.body, opts.maxBytes ?? 512 * 1024);
+  const body = await readCapped(res.body, opts.maxBytes ?? 512 * 1024, res.headers["content-encoding"]);
   return { status: res.statusCode, headers: res.headers, body };
 }
 
-export async function readCapped(body: AsyncIterable<Buffer> & { destroy?: () => void }, maxBytes: number): Promise<string> {
+/**
+ * Read at most maxBytes of a body as text. Undici does not decompress, and the
+ * Wayback Machine replays raw captures with their original gzip encoding, so
+ * pass the content-encoding header and we inflate here (truncation tolerated).
+ */
+export async function readCapped(body: AsyncIterable<Buffer> & { destroy?: () => void }, maxBytes: number, encoding?: string | string[]): Promise<string> {
   const chunks: Buffer[] = [];
   let size = 0;
   for await (const chunk of body) {
@@ -65,7 +71,19 @@ export async function readCapped(body: AsyncIterable<Buffer> & { destroy?: () =>
       break;
     }
   }
-  return Buffer.concat(chunks).toString("utf8");
+  return decode(Buffer.concat(chunks), String(encoding ?? "").toLowerCase());
+}
+
+function decode(buf: Buffer, enc: string): string {
+  const flush = { finishFlush: zlib.constants.Z_SYNC_FLUSH };
+  try {
+    if (enc.includes("gzip") || (buf[0] === 0x1f && buf[1] === 0x8b)) return zlib.gunzipSync(buf, flush).toString("utf8");
+    if (enc.includes("br")) return zlib.brotliDecompressSync(buf, { finishFlush: zlib.constants.BROTLI_OPERATION_FLUSH }).toString("utf8");
+    if (enc.includes("deflate")) return zlib.inflateSync(buf, flush).toString("utf8");
+  } catch {
+    /* not actually compressed, fall through */
+  }
+  return buf.toString("utf8");
 }
 
 /** Throw away a response body without an unhandled 'error' event from undici. */

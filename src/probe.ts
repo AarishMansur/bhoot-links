@@ -104,7 +104,7 @@ export async function probeOne(url: string, limiter: HostLimiter): Promise<Probe
       let text = "";
       let scriptCount = 0;
       if (/html|xml|text\/plain/i.test(ct) || !ct) {
-        const body = await readCapped(res.body, 512 * 1024);
+        const body = await readCapped(res.body, 512 * 1024, res.headers["content-encoding"]);
         const s = summarizeHtml(body);
         title = s.title;
         text = s.text;

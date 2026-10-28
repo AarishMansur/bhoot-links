@@ -13,6 +13,8 @@ export const waybackDate = (ts?: string) => {
 
 export function causeOfDeath(l: LinkResult): string {
   const p = l.probe;
+  if (p.oembed?.status === 401) return "video made private";
+  if (p.oembed) return "video removed";
   if (p.errorCode === "ENOTFOUND") return "domain vanished (DNS)";
   if (p.errorCode === "TIMEOUT") return "never answered (timeout)";
   if (p.errorCode) return p.errorCode.toLowerCase().replace(/_/g, " ");

@@ -1,0 +1,37 @@
+{
+ "http://dbms-tutorials.bhoot.test/er-model": [
+  "```json\n{\n \"status\": \"reincarnated\",\n \"confidence\": 0.9,\n \"evidence\": [\n  {\n   \"quote\": \"This domain is for sale!\",\n   \"source\": \"render\"\n  },\n  {\n   \"quote\": \"DBMS Tutorials: ER model.\",\n   \"source\": \"wayback\"\n  }\n ],\n \"resurrection_url\": \"https://web.archive.org/web/20171102183040/http://dbms-tutorials.bhoot.test/er-model\",\n \"ojha_note_hinglish\": \"Domain bik gaya, ab yahan sirf 'for sale' ka board laga hai. 2017 wali asli ER model notes Wayback pe zinda hain, wahi padho.\"\n}\n```"
+ ],
+ "http://cs-dept.bhoot.test/old/dbms-lab-manual.pdf": [
+  "```json\n{\n \"status\": \"reincarnated\",\n \"confidence\": 0.85,\n \"evidence\": [\n  {\n   \"quote\": \"HTTP 404\",\n   \"source\": \"probe\"\n  },\n  {\n   \"quote\": \"(application/pdf file archived)\",\n   \"source\": \"wayback\"\n  }\n ],\n \"resurrection_url\": \"https://web.archive.org/web/20210816094512/http://cs-dept.bhoot.test/old/dbms-lab-manual.pdf\",\n \"ojha_note_hinglish\": \"Department ki site pe lab manual gayab hai, par 2021 ki PDF Wayback ne sambhal ke rakhi hai. Download kar lo.\"\n}\n```"
+ ],
+ "http://compiler-notes.invalid/lex-yacc": [
+  "```json\n{\n \"status\": \"ghost\",\n \"confidence\": 0.9,\n \"evidence\": [\n  {\n   \"quote\": \"compiler-notes.invalid does not resolve\",\n   \"source\": \"probe\"\n  }\n ],\n \"resurrection_url\": null,\n \"ojha_note_hinglish\": \"Yeh domain hi duniya se chala gaya, DNS tak nahi milta. Archive mein bhi aatma nahi mili, naya Lex tutorial dhoondo.\"\n}\n```"
+ ],
+ "http://faculty.bhoot.test/~sharma/sdt-notes": [
+  "```json\n{\n \"status\": \"reincarnated\",\n \"confidence\": 0.88,\n \"evidence\": [\n  {\n   \"quote\": \"Faculty home pages were removed during the website migration.\",\n   \"source\": \"probe\"\n  },\n  {\n   \"quote\": \"Syntax Directed Translation, notes by Prof. R. Sharma.\",\n   \"source\": \"wayback\"\n  }\n ],\n \"resurrection_url\": \"https://web.archive.org/web/20190227113004/http://faculty.bhoot.test/~sharma/sdt-notes\",\n \"ojha_note_hinglish\": \"Sharma sir ka page website migration mein shaheed ho gaya. 2019 ki copy mil gayi, Unit 4 wahi se padho.\"\n}\n```"
+ ],
+ "http://cn-lectures.bhoot.test/osi": [
+  "```json\n{\n \"status\": \"possessed\",\n \"confidence\": 0.8,\n \"evidence\": [\n  {\n   \"quote\": \"Bet on IPL and win daily\",\n   \"source\": \"render\"\n  }\n ],\n \"resurrection_url\": null,\n \"ojha_note_hinglish\": \"Is page pe satta ka bhoot hai.\"\n}\n```",
+  "```json\n{\n \"status\": \"reincarnated\",\n \"confidence\": 0.86,\n \"evidence\": [\n  {\n   \"quote\": \"Related searches: Teen Patti real cash Online casino India\",\n   \"source\": \"render\"\n  },\n  {\n   \"quote\": \"CN Lectures: The OSI Model.\",\n   \"source\": \"wayback\"\n  }\n ],\n \"resurrection_url\": \"https://web.archive.org/web/20200118070355/http://cn-lectures.bhoot.test/osi\",\n \"ojha_note_hinglish\": \"Bahar se khaali dikhta hai, JS chalte hi casino ke ads nikal aate hain. 2020 wali OSI lecture ki copy safe hai, wahi use karo.\"\n}\n```"
+ ],
+ "http://slow.bhoot.test/labs": [
+  "```json\n{\n \"status\": \"ghost\",\n \"confidence\": 0.7,\n \"evidence\": [\n  {\n   \"quote\": \"no response (TIMEOUT)\",\n   \"source\": \"probe\"\n  }\n ],\n \"resurrection_url\": null,\n \"ojha_note_hinglish\": \"Server ne jawab hi nahi diya, lagta hai so gaya hamesha ke liye. Lab sheets kisi senior se le lo.\"\n}\n```"
+ ],
+ "http://learn-c-online.bhoot.test/pointers": [
+  "```json\n{\n \"status\": \"reincarnated\",\n \"confidence\": 0.95,\n \"evidence\": [\n  {\n   \"quote\": \"Teen Patti Gold: 500% Welcome Bonus\",\n   \"source\": \"render\"\n  },\n  {\n   \"quote\": \"Learn C Online: Pointers.\",\n   \"source\": \"wayback\"\n  }\n ],\n \"resurrection_url\": \"https://web.archive.org/web/20180905141822/http://learn-c-online.bhoot.test/pointers\",\n \"ojha_note_hinglish\": \"Pointers padhne gaye the, Teen Patti mil gaya. Domain pe satta wala bhoot baitha hai. 2018 ki asli copy Wayback pe hai.\"\n}\n```"
+ ],
+ "http://ml-course.bhoot.test/week1": [
+  "```json\n{\n \"status\": \"possessed\",\n \"confidence\": 0.92,\n \"evidence\": [\n  {\n   \"quote\": \"ml-course.bhoot.test -> lucky-spin.bhoot.test\",\n   \"source\": \"probe\"\n  },\n  {\n   \"quote\": \"Claim 100 free spins\",\n   \"source\": \"render\"\n  }\n ],\n \"resurrection_url\": null,\n \"ojha_note_hinglish\": \"ML course ka link seedha casino pe le jaata hai. Purani copy bhi nahi mili, isko syllabus se hatao.\"\n}\n```"
+ ],
+ "http://old-python-site.bhoot.test/tutorial": [
+  "```json\n{\n \"status\": \"alive\",\n \"confidence\": 0.8,\n \"evidence\": [\n  {\n   \"quote\": \"The Python Tutorial\",\n   \"source\": \"render\"\n  }\n ],\n \"resurrection_url\": null,\n \"ojha_note_hinglish\": \"Ghar badal liya hai par aatma wahi hai. Naye address pe Python tutorial theek chal raha hai.\"\n}\n```"
+ ],
+ "http://erp-portal.bhoot.test/assignments": [
+  "```json\n{\n \"status\": \"ghost\",\n \"confidence\": 0.6,\n \"evidence\": [\n  {\n   \"quote\": \"ERP portal has been shut down permanently\",\n   \"source\": \"probe\"\n  }\n ],\n \"resurrection_url\": null,\n \"ojha_note_hinglish\": \"ERP mar gaya.\"\n}\n```",
+  "```json\n{\n \"status\": \"ghost\",\n \"confidence\": 0.6,\n \"evidence\": [\n  {\n   \"quote\": \"The ERP portal was shut down\",\n   \"source\": \"probe\"\n  }\n ],\n \"resurrection_url\": null,\n \"ojha_note_hinglish\": \"ERP mar gaya.\"\n}\n```"
+ ],
+ "http://www.dbms-tutorials.bhoot.test/normalization": [
+  "```json\n{\n \"status\": \"possessed\",\n \"confidence\": 0.85,\n \"evidence\": [\n  {\n   \"quote\": \"Make an offer on this domain today.\",\n   \"source\": \"render\"\n  }\n ],\n \"resurrection_url\": null,\n \"ojha_note_hinglish\": \"Normalization ke sawaal gaye, ab domain bechne ka ishtehaar laga hai. Archive mein yeh page kabhi save nahi hua.\"\n}\n```"
+ ]
+}

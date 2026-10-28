@@ -1,0 +1,7 @@
+{
+  "http://cs-dept.bhoot.test/old/dbms-lab-manual.pdf": { "timestamp": "20210816094512", "text": "(application/pdf file archived)" },
+  "http://faculty.bhoot.test/~sharma/sdt-notes": { "timestamp": "20190227113004", "text": "Syntax Directed Translation, notes by Prof. R. Sharma. Unit 4: SDT schemes, S-attributed and L-attributed definitions, construction of syntax trees." },
+  "http://learn-c-online.bhoot.test/pointers": { "timestamp": "20180905141822", "text": "Learn C Online: Pointers. A pointer is a variable that stores the address of another variable. Examples: pointer arithmetic, pointers and arrays, pointer to pointer." },
+  "http://cn-lectures.bhoot.test/osi": { "timestamp": "20200118070355", "text": "CN Lectures: The OSI Model. Seven layers explained with animations: physical, data link, network, transport, session, presentation, application." },
+  "http://dbms-tutorials.bhoot.test/er-model": { "timestamp": "20171102183040", "text": "DBMS Tutorials: ER model. Entities, attributes, relationships, cardinality and participation constraints with solved examples." }
+}

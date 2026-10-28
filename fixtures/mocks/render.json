@@ -1,0 +1,68 @@
+{
+  "http://dbms-tutorials.bhoot.test/er-model": {
+    "finalUrl": "http://dbms-tutorials.bhoot.test/er-model",
+    "title": "dbms-tutorials.bhoot.test is for sale",
+    "topic": "parked domain offered for sale with ad links",
+    "language": "English",
+    "gambling": false, "casino": false, "parked": true,
+    "signals": ["parked:this domain is for sale", "parked:related searches", "page:This domain is for sale!"],
+    "textSample": "dbms-tutorials.bhoot.test dbms-tutorials.bhoot.test This domain is for sale! Make an offer on this domain today. Related searches: Online Degree Cheap Loans Free Movies",
+    "screenshotFixture": "dbms-tutorials.png",
+    "ms": 2840
+  },
+  "http://www.dbms-tutorials.bhoot.test/normalization": {
+    "finalUrl": "http://www.dbms-tutorials.bhoot.test/normalization",
+    "title": "dbms-tutorials.bhoot.test is for sale",
+    "topic": "parked domain offered for sale with ad links",
+    "language": "English",
+    "gambling": false, "casino": false, "parked": true,
+    "signals": ["parked:this domain is for sale", "parked:related searches", "page:Make an offer on this domain today."],
+    "textSample": "dbms-tutorials.bhoot.test dbms-tutorials.bhoot.test This domain is for sale! Make an offer on this domain today. Related searches: Online Degree Cheap Loans Free Movies",
+    "screenshotFixture": "dbms-tutorials.png",
+    "ms": 2610
+  },
+  "http://cn-lectures.bhoot.test/osi": {
+    "finalUrl": "http://cn-lectures.bhoot.test/osi",
+    "title": "cn-lectures.bhoot.test",
+    "topic": "parked domain with casino ad links",
+    "language": "English",
+    "gambling": true, "casino": true, "parked": true,
+    "signals": ["parked:domain may be for sale", "parked:inquire about this domain", "gambling:teen patti", "gambling:casino", "page:This domain may be for sale. Inquire about this domain."],
+    "textSample": "cn-lectures.bhoot.test cn-lectures.bhoot.test This domain may be for sale. Inquire about this domain. Related searches: Teen Patti real cash Online casino India",
+    "screenshotFixture": "cn-lectures.png",
+    "ms": 3390
+  },
+  "http://learn-c-online.bhoot.test/pointers": {
+    "finalUrl": "http://learn-c-online.bhoot.test/pointers",
+    "title": "Lucky Teen Patti | India's No.1 Casino",
+    "topic": "real money teen patti, rummy and satta matka site",
+    "language": "Hinglish (English and Hindi)",
+    "gambling": true, "casino": true, "parked": false,
+    "signals": ["gambling:casino", "gambling:teen patti", "gambling:andar bahar", "gambling:rummy", "gambling:satta", "gambling:welcome bonus", "page:Teen Patti Gold: 500% Welcome Bonus"],
+    "textSample": "♠ Lucky Teen Patti Login | Register Teen Patti Gold: 500% Welcome Bonus Play rummy, andar bahar and live casino. Instant UPI withdrawal. अभी खेलें और जीतें! सट्टा मटका रिजल्ट सबसे पहले Register now ♣ Rummy ♦ Andar Bahar ♥ Live Casino ♠ Satta Matka",
+    "screenshotFixture": "learn-c-online.png",
+    "ms": 3120
+  },
+  "http://ml-course.bhoot.test/week1": {
+    "finalUrl": "http://lucky-spin.bhoot.test/welcome?ref=mlcourse",
+    "title": "Lucky Spin Casino",
+    "topic": "online casino offering free spins and IPL betting",
+    "language": "English",
+    "gambling": true, "casino": true, "parked": false,
+    "signals": ["gambling:aviator game", "gambling:free spins", "gambling:deposit bonus", "page:Claim 100 free spins"],
+    "textSample": "🎰 Lucky Spin Deposit | Withdraw Claim 100 free spins Aviator game, slots and IPL betting with deposit bonus. Spin now",
+    "screenshotFixture": "lucky-spin.png",
+    "ms": 2950
+  },
+  "http://old-python-site.bhoot.test/tutorial": {
+    "finalUrl": "http://python-mirror.bhoot.test/tutorial/",
+    "title": "The Python Tutorial (mirror)",
+    "topic": "Python programming tutorial for students",
+    "language": "English",
+    "gambling": false, "casino": false, "parked": false,
+    "signals": [],
+    "textSample": "The Python Tutorial Python notes for second and third year B.Tech students. Each unit has worked examples, previous year questions and a short quiz at the end so you can test yourself before the sessional exam. Chapters: data structures, modules, input and output, classes.",
+    "screenshotFixture": "python-mirror.png",
+    "ms": 2480
+  }
+}

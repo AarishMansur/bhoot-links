@@ -17,7 +17,8 @@
     "report": "tsx src/cli.ts report",
     "demo": "tsx src/cli.ts demo",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "preview": "npm run preview --workspace web"
   },
   "dependencies": {
     "@ai-sdk/google": "^3.0.139",
@@ -34,5 +35,8 @@
     "@types/node": "^26.6.6",
     "typescript": "^7.0.2",
     "vitest": "^4.1.12"
-  }
+  },
+  "workspaces": [
+    "web"
+  ]
 }

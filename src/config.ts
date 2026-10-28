@@ -36,7 +36,7 @@ export function getConfig() {
     model: env.LLM_MODEL ?? "gemma-4-26b-a4b-it",
     fallbackModel: env.LLM_FALLBACK_MODEL,
     waybackEnabled: env.WAYBACK !== "0",
-    waybackMaxChecks: num(env.WAYBACK_MAX_CHECKS, 3),
+    waybackMaxChecks: num(env.WAYBACK_MAX_CHECKS, 4),
     sentryDsn: env.SENTRY_DSN,
     outDir: env.OUT_DIR ?? "out",
   };

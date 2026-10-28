@@ -43,15 +43,19 @@ export async function findResurrection(url: string, cfg: Config, metrics: Metric
   }
   try {
     const target = url.replace(/^https?:\/\//, "");
-    const cdx = `https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(target)}&output=json&fl=timestamp,original,statuscode&filter=statuscode:200&collapse=digest&limit=-15`;
+    const cdx = `https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(target)}&output=json&fl=timestamp,original,statuscode&filter=statuscode:200&collapse=digest&limit=-60`;
     await limiter.wait("web.archive.org");
     const r = await getText(cdx, { timeoutMs: 30_000, maxBytes: 256 * 1024 });
     if (r.status !== 200) return { found: false, checked: 0, error: `CDX HTTP ${r.status}` };
     const rows: string[][] = r.body.trim() ? JSON.parse(r.body) : [];
     const snaps = rows.slice(1).reverse(); // newest first
+    // A takeover can be years old, so after the newest capture step back roughly
+    // doubling each time (0, 2, 5, 11, 23...) instead of reading neighbours.
+    const order: number[] = [];
+    for (let i = 0; order.length < cfg.waybackMaxChecks && i < snaps.length; i = i * 2 + 2 - (i === 0 ? 0 : 1)) order.push(i);
     let checked = 0;
-    for (const [timestamp, original] of snaps) {
-      if (checked >= cfg.waybackMaxChecks) break;
+    for (const idx of order) {
+      const [timestamp, original] = snaps[idx];
       checked++;
       const raw = `https://web.archive.org/web/${timestamp}id_/${original}`;
       try {

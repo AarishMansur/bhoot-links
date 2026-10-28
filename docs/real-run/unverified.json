@@ -1,0 +1,22 @@
+[
+  {
+    "url": "http://elearning.vtu.ac.in/econtent/courses/video/CSE/06CS35.html",
+    "reason": "plain http answered 500 by the build machine's proxy (https upgrade failed too)",
+    "toolSaid": "ghost"
+  },
+  {
+    "url": "https://www.javatpoint.com/java-tutorial",
+    "reason": "ECONNRESET from the build machine only",
+    "toolSaid": "reincarnated"
+  },
+  {
+    "url": "http://cse01-iiith.vlabs.ac.in/",
+    "reason": "plain http answered 500 by the build machine's proxy (https upgrade failed too)",
+    "toolSaid": "reincarnated"
+  },
+  {
+    "url": "https://www.javatpoint.com/latex",
+    "reason": "ECONNRESET from the build machine only",
+    "toolSaid": "reincarnated"
+  }
+]

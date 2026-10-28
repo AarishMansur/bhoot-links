@@ -1,11 +1,12 @@
 <script lang="ts">
   import type { LinkResult } from "../../../src/types";
-  import { label, shortUrl } from "./format";
+  import { label, shortUrl, waybackDate } from "./format";
 
   let { link }: { link: LinkResult } = $props();
   const shot = link.render?.screenshot ? `data/${link.render.screenshot}` : null;
   const final = link.render?.finalUrl ?? link.probe.finalUrl;
-  const moved = final && final.replace(/\/$/, "") !== link.url.replace(/\/$/, "");
+  const bare = (u: string) => u.replace(/^https?:\/\//, "").replace(/\/$/, "");
+  const moved = final && bare(final) !== bare(link.url);
   const flags = [
     link.render?.casino && "casino",
     link.render?.gambling && "betting",
@@ -23,7 +24,7 @@
     <div class="stamp">possessed</div>
   </div>
   <div class="body">
-    <h3>{label(link)}</h3>
+    <h3 class:url-title={!link.anchorText}>{label(link)}</h3>
     <div class="urls">
       <span class="was">{shortUrl(link.url, 58)}</span>
       {#if moved}<span class="arrow">↳ now sends you to</span><span class="now">{shortUrl(final, 58)}</span>{/if}
@@ -35,6 +36,9 @@
       <blockquote><span class="src">{ev.source}</span> {ev.quote}</blockquote>
     {/each}
     <p class="note">“{link.verdict.ojha_note_hinglish}”</p>
+    {#if link.verdict.resurrection_url}
+      <a class="reborn" href={link.verdict.resurrection_url} rel="noreferrer" target="_blank">🌼 clean copy from {waybackDate(link.wayback?.timestamp)}</a>
+    {/if}
   </div>
 </article>
 
@@ -76,6 +80,7 @@
   }
   .body { padding: 1rem 1.1rem 1.2rem; }
   h3 { margin: 0 0 0.4rem; font-family: "Cinzel", Georgia, serif; font-size: 1.05rem; color: #ffd9dc; overflow-wrap: anywhere; }
+  h3.url-title { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.9rem; font-weight: 400; }
   .urls { display: flex; flex-direction: column; gap: 0.15rem; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.72rem; overflow-wrap: anywhere; }
   .was { color: #f0b5bb; }
   .arrow { color: #8f5960; font-family: system-ui, sans-serif; font-size: 0.7rem; }
@@ -85,4 +90,5 @@
   blockquote { margin: 0.55rem 0 0; padding: 0.35rem 0.6rem; border-left: 2px solid #c1121f; background: #00000040; font-size: 0.8rem; color: #f3d6d8; overflow-wrap: anywhere; }
   .src { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; color: #a6656c; margin-right: 0.3rem; }
   .note { margin: 0.7rem 0 0; font-style: italic; font-size: 0.86rem; color: #f6c9cd; line-height: 1.45; }
+  .reborn { display: inline-block; margin-top: 0.7rem; color: #ffcf70; font-weight: 600; font-size: 0.85rem; text-decoration: none; border-bottom: 1px dashed #ffcf7088; }
 </style>

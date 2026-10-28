@@ -9,7 +9,7 @@
 
 <article class="stone {shape}" style="--tilt:{((i * 37) % 7) - 3}deg">
   <div class="rip">R.I.P.</div>
-  <h3 title={link.url}>{label(link)}</h3>
+  <h3 title={link.url} class:url-title={!link.anchorText}>{label(link)}</h3>
   <a class="url" href={link.url} rel="noreferrer nofollow" target="_blank">{shortUrl(link.url, 54)}</a>
   <div class="cause">{causeOfDeath(link)}</div>
   <p class="note">“{link.verdict.ojha_note_hinglish}”</p>
@@ -77,6 +77,7 @@
     text-shadow: 0 1px 0 #000a, 0 -1px 0 #fff1;
     overflow-wrap: anywhere;
   }
+  h3.url-title { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.82rem; font-weight: 400; }
   .url {
     display: block;
     font-family: "IBM Plex Mono", ui-monospace, monospace;

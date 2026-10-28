@@ -8,7 +8,8 @@
 
   const by = (s: string) => (scan ? scan.links.filter((l) => l.verdict.status === s) : []);
   const ghosts = by("ghost");
-  const possessed = by("possessed");
+  // possessed links stay on the wall even after we find them a clean archive copy
+  const possessed = scan ? scan.links.filter((l) => l.verdict.status === "possessed" || (l.verdict.status === "reincarnated" && wasPossessed(l))) : [];
   const reborn = by("reincarnated");
   const unsure = by("unsure");
   const alive = by("alive");
@@ -18,7 +19,7 @@
     return xs.length ? xs[Math.floor(xs.length / 2)] : null;
   })();
   const scanned = scan ? new Date(scan.meta.scannedAt).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", dateStyle: "medium", timeStyle: "short" }) + " IST" : "";
-  const deadShare = scan && m && m.links ? Math.round(((m.links - m.counts.alive) / m.links) * 100) : 0;
+  const broken = m ? m.counts.ghost + m.counts.possessed + m.counts.reincarnated : 0;
 </script>
 
 <svelte:head>
@@ -35,7 +36,7 @@
   {#if scan}
     <p class="lede">
       Every link in <a href={/^https?:/.test(scan.meta.source) ? scan.meta.source : undefined} rel="noreferrer">{shortUrl(scan.meta.source, 80)}</a>,
-      checked on {scanned}. {#if deadShare > 0}<strong>{deadShare}%</strong> of them are no longer what the syllabus promised.{/if}
+      checked on {scanned}. {#if broken > 0}<strong>{broken}</strong> of {m?.links} are dead or possessed{#if m?.counts.reincarnated}, and <strong>{m?.counts.reincarnated}</strong> of those came back from the archive{/if}.{/if}
     </p>
     <div class="badges">
       <span class="badge {scan.meta.mode}">{scan.meta.mode === "mock" ? "demo data (mock run)" : "real run"}</span>
@@ -55,7 +56,7 @@
   <section class="metrics" aria-label="Scan metrics">
     <div class="metric"><b>{m.links}</b><span>links checked</span></div>
     <div class="metric ghost"><b>{m.counts.ghost}</b><span>ghosts</span></div>
-    <div class="metric red"><b>{m.counts.possessed}</b><span>possessed</span></div>
+    <div class="metric red"><b>{possessed.length}</b><span>possessed{possessed.length > m.counts.possessed ? `, ${possessed.length - m.counts.possessed} resurrected` : ""}</span></div>
     <div class="metric gold"><b>{m.counts.reincarnated}</b><span>reincarnated</span></div>
     <div class="metric green"><b>{m.counts.alive}</b><span>alive</span></div>
     <div class="metric"><b>{m.counts.unsure}</b><span>unsure</span></div>
@@ -94,7 +95,7 @@
                 <img class="thumb" src={`data/${link.render.screenshot}`} alt={`Takeover at ${link.url}`} loading="lazy" />
               {/if}
               <div class="rb">
-                <h3>{label(link)} {#if wasPossessed(link)}<span class="tag red">was possessed</span>{:else}<span class="tag">was dead</span>{/if}</h3>
+                <h3 class:url-title={!link.anchorText}>{label(link)} {#if wasPossessed(link)}<span class="tag red">was possessed</span>{:else}<span class="tag">was dead</span>{/if}</h3>
                 <div class="swap">
                   <s>{shortUrl(link.url, 70)}</s>
                   <a href={link.verdict.resurrection_url} rel="noreferrer" target="_blank">🌼 archived copy from {waybackDate(link.wayback?.timestamp)}</a>
@@ -250,6 +251,7 @@
   .thumb { width: 132px; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-radius: 8px; border: 1px solid #7a1420; filter: grayscale(0.6) sepia(0.3); flex-shrink: 0; }
   .rb { min-width: 0; }
   .rb h3 { margin: 0 0 0.35rem; font-family: "Cinzel", Georgia, serif; font-size: 1.05rem; color: #ffe3b0; }
+  .rb h3.url-title { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.9rem; font-weight: 400; }
   .tag { font-family: system-ui, sans-serif; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.1rem 0.45rem; border-radius: 99px; border: 1px solid #8d8a83; color: #c9c3b8; vertical-align: middle; }
   .tag.red { border-color: #c1121f; color: #ff9aa5; }
   .swap { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; align-items: baseline; font-size: 0.85rem; }

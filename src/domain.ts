@@ -8,6 +8,8 @@ const TWO_LEVEL = new Set([
   "co.uk", "ac.uk", "org.uk", "gov.uk", "com.au", "edu.au", "co.jp", "ac.jp", "com.br", "co.nz",
   "github.io", "gitlab.io", "blogspot.com", "wordpress.com", "netlify.app", "vercel.app", "pages.dev",
   "sites.google.com",
+  // the demo's fake internet: every fixture host counts as its own site
+  "bhoot.test",
 ]);
 
 export function registrableDomain(host: string): string {

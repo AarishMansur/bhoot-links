@@ -37,7 +37,7 @@ export async function findResurrection(url: string, cfg: Config, metrics: Metric
   if (cfg.mock) {
     mockTable ??= JSON.parse(readFileSync(join("fixtures", "mocks", "wayback.json"), "utf8"));
     const row = mockTable![url];
-    if (!row) return { found: false, checked: 0 };
+    if (!row) return { found: false, checked: 1, error: "never archived" };
     metrics.waybackFound++;
     return { found: true, checked: 1, timestamp: row.timestamp, snapshotUrl: `https://web.archive.org/web/${row.timestamp}/${url}`, textSample: row.text };
   }

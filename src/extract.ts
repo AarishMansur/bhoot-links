@@ -50,7 +50,8 @@ function dedupe(links: ExtractedLink[]): ExtractedLink[] {
 }
 
 /** Links typed into plain text (what you get from most syllabus PDFs). */
-export function extractFromText(text: string, page?: number): ExtractedLink[] {
+export function extractFromText(raw: string, page?: number): ExtractedLink[] {
+  const text = raw.replace(/[ \t\r\f\v]+/g, " ").replace(/\n\s*/g, "\n");
   const out: ExtractedLink[] = [];
   for (const m of text.matchAll(URL_RE)) {
     const url = cleanUrl(m[0]);
@@ -131,4 +132,20 @@ export async function extractFromPdf(data: Uint8Array): Promise<PdfExtract> {
   } finally {
     await parser.destroy();
   }
+}
+
+/** Plain text of an HTML page with each link's address kept next to its anchor, for the exorcised copy. */
+export function htmlToTextWithLinks(html: string, baseUrl?: string): string {
+  const $ = cheerio.load(html);
+  $("script, style, noscript").remove();
+  $("a[href]").each((_, el) => {
+    try {
+      const abs = new URL($(el).attr("href") ?? "", baseUrl).toString();
+      if (/^https?:/.test(abs)) $(el).append(` [${abs.replace(/&/g, "&amp;").replace(/</g, "&lt;")}]`);
+    } catch {}
+  });
+  $("br, p, li, h1, h2, h3, h4, tr, div").each((_, el) => {
+    $(el).append("\n");
+  });
+  return $("body").text().replace(/[ \t]+/g, " ").replace(/\n\s*\n+/g, "\n").trim();
 }

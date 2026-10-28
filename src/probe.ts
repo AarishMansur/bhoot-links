@@ -16,13 +16,19 @@ export function summarizeHtml(html: string) {
   const title = $("title").first().text().trim().slice(0, 200);
   const metaRefresh = $('meta[http-equiv="refresh" i]').attr("content") ?? "";
   $("script, style, noscript, svg").remove();
+  // keep words from neighbouring elements apart ("for sale!Make an offer" -> "for sale! Make an offer")
+  $("body *").each((_, el) => {
+    if ((el as any).children?.length) $(el).append(" ");
+  });
   const text = $("body").text().replace(/\s+/g, " ").trim();
   return { title, text, scriptCount, metaRefresh };
 }
 
 function errCode(e: any): string {
-  const c = e?.code ?? e?.cause?.code ?? e?.name;
-  if (c === "TimeoutError" || c === "AbortError" || c === "UND_ERR_ABORTED") return "TIMEOUT";
+  const name = e?.name ?? e?.cause?.name;
+  if (name === "TimeoutError" || name === "AbortError") return "TIMEOUT";
+  const c = e?.cause?.code ?? e?.code;
+  if (c === "UND_ERR_ABORTED" || typeof c === "number") return "TIMEOUT";
   return String(c ?? "UNKNOWN");
 }
 

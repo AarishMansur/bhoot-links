@@ -13,6 +13,8 @@ const cache = new Map<string, Promise<"ok" | "nxdomain" | "unknown">>();
 export function dnsStatus(host: string): Promise<"ok" | "nxdomain" | "unknown"> {
   const cfg = getConfig();
   if (cfg.mock && host.endsWith(".bhoot.test")) return Promise.resolve("ok");
+  // RFC 6761: .invalid never resolves, anywhere
+  if (host.endsWith(".invalid")) return Promise.resolve("nxdomain");
   let p = cache.get(host);
   if (p) return p;
   p = (async () => {

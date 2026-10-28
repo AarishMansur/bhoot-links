@@ -167,6 +167,16 @@ export function rulesVerdict(probe: ProbeResult, tri: TriageResult, render?: Ren
         : `Asli page toh chal basa, par ${yr} ki copy Wayback pe zinda hai. Yeh wala link use karo.`,
     };
   }
+  if (tri.bucket === "suspicious" && !isPossessed && render && !render.error) {
+    const final = render.finalUrl || probe.finalUrl;
+    if (/\/(login|signin|sign-in|auth)\b/i.test(final)) {
+      return { ...base, status: "unsure", confidence: 0.4, evidence: [ev(final, "render")], resurrection_url: null, ojha_note_hinglish: "Page login ke peeche chhupa hai. Bina account ke students ko kuch nahi dikhega, yeh syllabus mein likhna chahiye." };
+    }
+    const seen = render.title || (render.textSample.length >= 200 ? render.textSample.slice(0, 80) : "");
+    if (seen) {
+      return { ...base, status: "alive", confidence: 0.6, evidence: [ev(seen, "render")], resurrection_url: null, ojha_note_hinglish: "JavaScript chalne ke baad asli page dikh gaya, koi bhoot nahi. Link theek hai." };
+    }
+  }
   if (isPossessed) return { ...base, status: "possessed", confidence: 0.75, evidence: [ev(reason, "probe")], resurrection_url: null, ojha_note_hinglish: "Yahan ab padhai nahi, satta ya for-sale ka bhoot baitha hai. Students ko yahan mat bhejo." };
   if (dead) return { ...base, status: "ghost", confidence: 0.8, evidence: [ev(reason, "probe")], resurrection_url: null, ojha_note_hinglish: "Yeh link mar chuka hai aur archive mein bhi aatma nahi mili. Naya resource dhoondna padega." };
   return { ...base, status: "unsure", confidence: 0.4, evidence: [ev(reason, "probe")], resurrection_url: null, ojha_note_hinglish: "Kuch toh gadbad hai, par pakka nahi bol sakta. Ek baar khud khol ke dekho." };

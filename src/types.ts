@@ -104,6 +104,7 @@ export interface Metrics {
   tokensOut: number;
   llmLatencyMs: number[];
   browserSessions: number;
+  browserbaseSessionIds: string[];
   browserMinutes: number;
   pagesRendered: number;
   waybackLookups: number;

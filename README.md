@@ -141,14 +141,25 @@ Copy `.env.example` to `.env`. Everything is optional.
 
 ## A real run
 
-[`docs/real-run/`](docs/real-run/) has an actual scan of a public university syllabus, with the source URL, date, counts and the full `results.json`. That run used the keyless parts only (extract, probe, triage, local Chrome render, Wayback, rule verdicts). The Browserbase and Gemma steps need keys and are marked as such there.
+On 29 Oct 2026 I pointed it at VTU's official 2022 scheme CSE syllabus for 3rd and 4th semester ([PDF](https://vtu.ac.in/pdf/2022_3to8/2cssyll.pdf), 88 pages). From [`docs/real-run/`](docs/real-run/):
+
+* **106** unique links, **80** alive
+* **11** dead or possessed, and a clean Wayback copy was found for **8** of them
+* **all 5** `nptel.ac.in` links 404
+* **1** possessed domain: `nptelvideos.in` answers 200 OK and is now a parked "may be for sale" page; Bhoot Links stepped back past the parked captures to a clean copy from Feb 2021
+* 54 YouTube links, 1 removed
+* 15 unsure: bot walls, login-only course pages, and 4 links my build machine's network could not check fairly
+
+![Report from the real run](docs/real-run/report.png)
+
+That run used the keyless parts only (extract, probe, triage, Stagehand on local Chrome, Wayback, rule verdicts). The Browserbase and Gemma steps need keys; see [`docs/real-run/README.md`](docs/real-run/README.md) for the full table and caveats.
 
 ## Project layout
 
 ```
 src/          CLI and pipeline (extract, probe, triage, render, wayback, ojha, metrics)
 fixtures/     the fake haunted internet used by the demo and its screenshots
-test/         vitest: extraction, triage, robots, the quote validator, gzip
+test/         vitest: PDF and HTML extraction, triage, robots, the quote validator, gzip
 web/          SvelteKit static report, prerendered from results.json
 docs/         screenshots and the real run
 ```

@@ -75,7 +75,7 @@
     box-shadow: 0 4px 14px #000a;
   }
   .body { padding: 1rem 1.1rem 1.2rem; }
-  h3 { margin: 0 0 0.4rem; font-family: "Cinzel", Georgia, serif; font-size: 1.05rem; color: #ffd9dc; }
+  h3 { margin: 0 0 0.4rem; font-family: "Cinzel", Georgia, serif; font-size: 1.05rem; color: #ffd9dc; overflow-wrap: anywhere; }
   .urls { display: flex; flex-direction: column; gap: 0.15rem; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.72rem; overflow-wrap: anywhere; }
   .was { color: #f0b5bb; }
   .arrow { color: #8f5960; font-family: system-ui, sans-serif; font-size: 0.7rem; }

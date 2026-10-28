@@ -1,7 +1,7 @@
 <script lang="ts">
-  import "@fontsource/cinzel/500.css";
-  import "@fontsource/cinzel/700.css";
-  import "@fontsource/ibm-plex-mono/400.css";
+  import "@fontsource/cinzel/latin-500.css";
+  import "@fontsource/cinzel/latin-700.css";
+  import "@fontsource/ibm-plex-mono/latin-400.css";
 
   let { children } = $props();
 </script>

@@ -74,7 +74,8 @@ export async function scan(src: string, opts: ScanOptions = {}): Promise<ScanOut
 
     // 4. look for an older, clean soul on the Wayback Machine
     if (opts.wayback !== false && cfg.waybackEnabled) {
-      const needs = rows.filter((r) => r.tri.bucket === "dead" || r.tri.bucket === "suspicious");
+      // an archived YouTube watch page does not play the video, so it is no resurrection
+      const needs = rows.filter((r) => (r.tri.bucket === "dead" || r.tri.bucket === "suspicious") && !r.probe.oembed);
       if (needs.length) console.log(`\n  searching the Wayback Machine for ${needs.length} link(s)...`);
       for (const r of needs) {
         r.wayback = await span(`wayback ${r.link.url}`, "gen_ai.execute_tool", { "gen_ai.tool.name": "wayback_cdx" }, () => findResurrection(r.link.url, cfg, metrics));

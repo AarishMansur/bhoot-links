@@ -24,6 +24,15 @@ export function triage(p: ProbeResult): TriageResult {
     return { bucket: "dead", reasons: [`request failed (${p.errorCode})`] };
   }
 
+  if (p.oembed) {
+    const o = p.oembed;
+    if (o.status === 200) return { bucket: "alive", reasons: [`YouTube video exists: "${o.title ?? "untitled"}"`] };
+    if (o.status === 403) return { bucket: "alive", reasons: ["YouTube video exists (embedding disabled)"] };
+    if (o.status === 401) return { bucket: "dead", reasons: ["YouTube oEmbed 401: the video is private now"] };
+    if (o.status === 400 || o.status === 404) return { bucket: "dead", reasons: [`YouTube oEmbed ${o.status}: video removed or never existed`] };
+    if (o.status === 429) return { bucket: "blocked", reasons: ["YouTube rate limited the check"] };
+  }
+
   const status = p.status ?? 0;
   if (status === 404 || status === 410) return { bucket: "dead", reasons: [`HTTP ${status}`] };
   if (status >= 500) return { bucket: "dead", reasons: [`HTTP ${status} server error`] };

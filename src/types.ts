@@ -33,6 +33,8 @@ export interface ProbeResult {
   textLength: number;
   scriptCount: number;
   signals: string[];
+  /** YouTube oEmbed answer, only for YouTube video and playlist links. */
+  oembed?: { status: number; title?: string; author?: string };
   ms: number;
 }
 

@@ -64,3 +64,14 @@ describe("triage", () => {
     expect(triage(base({ robotsBlocked: true })).bucket).toBe("blocked");
   });
 });
+
+describe("YouTube links", () => {
+  const yt = (status: number, title?: string) =>
+    triage(base({ url: "https://www.youtube.com/watch?v=abc", textLength: 30, oembed: { status, title } }));
+  it("treats a removed video as dead even though the watch page says 200", () => {
+    expect(yt(404).bucket).toBe("dead");
+    expect(yt(400).bucket).toBe("dead");
+  });
+  it("treats a private video as dead", () => expect(yt(401).reasons[0]).toMatch(/private/));
+  it("keeps a real video alive", () => expect(yt(200, "Lecture 1").bucket).toBe("alive"));
+});

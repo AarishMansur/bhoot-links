@@ -8,6 +8,7 @@ import { discard, dispatcher, readCapped, routeUrl } from "./http.js";
 import { HostLimiter, pool } from "./ratelimit.js";
 import { robotsAllows } from "./robots.js";
 import { findSignals } from "./signals.js";
+import { youTubeOembed, youTubeOembedTarget } from "./youtube.js";
 import type { Hop, ProbeResult } from "./types.js";
 
 export function summarizeHtml(html: string) {
@@ -46,6 +47,28 @@ export async function probeOne(url: string, limiter: HostLimiter): Promise<Probe
     }
     if ((await dnsStatus(originalDomain)) === "nxdomain") {
       return { ...base, ok: false, errorCode: "ENOTFOUND", error: `${originalDomain} does not resolve`, finalUrl: url, finalDomain: originalDomain, offDomain: false, ms: Date.now() - t0 };
+    }
+    const yt = cfg.mock ? null : youTubeOembedTarget(url);
+    if (yt) {
+      await limiter.wait("www.youtube.com");
+      const o = await youTubeOembed(yt);
+      const text = o.title ? `YouTube video "${o.title}" by ${o.author ?? "unknown"}` : "";
+      chain.push({ url, status: o.status });
+      return {
+        ...base,
+        ok: o.status === 200 || o.status === 403,
+        status: o.status === 200 || o.status === 403 ? 200 : o.status === 401 ? 401 : 404,
+        oembed: o,
+        contentType: "application/json+oembed",
+        finalUrl: url,
+        finalDomain: originalDomain,
+        offDomain: false,
+        title: o.title,
+        textSample: text,
+        textLength: text.length,
+        signals: findSignals(text),
+        ms: Date.now() - t0,
+      };
     }
     for (let hop = 0; hop <= cfg.maxRedirects; hop++) {
       await limiter.wait(hostOf(current));

@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_013501595428077568125",
+    "toolSaid": "alive",
+    "by": "rules",
+    "reason": "geo-blocked: the Browserbase cloud browser is outside India and the site says \"not accessible in your country\""
+  },
+  {
+    "url": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_0130944433473699842782_shared",
+    "toolSaid": "ghost",
+    "by": "gemma",
+    "reason": "geo-blocked: the Browserbase cloud browser is outside India and the site says \"not accessible in your country\""
+  },
+  {
+    "url": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_01330134712177459211926_share",
+    "toolSaid": "ghost",
+    "by": "gemma",
+    "reason": "geo-blocked: the Browserbase cloud browser is outside India and the site says \"not accessible in your country\""
+  },
+  {
+    "url": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_01384364250678886443375_shared/overview",
+    "toolSaid": "alive",
+    "by": "rules",
+    "reason": "geo-blocked: the Browserbase cloud browser is outside India and the site says \"not accessible in your country\""
+  },
+  {
+    "url": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_0130944433473699842782_shared/overview",
+    "toolSaid": "alive",
+    "by": "rules",
+    "reason": "geo-blocked: the Browserbase cloud browser is outside India and the site says \"not accessible in your country\""
+  }
+]

@@ -204,7 +204,7 @@ function makeAsk(cfg: Config, url: string): Ask {
     const google = createGoogleGenerativeAI({ apiKey: cfg.googleKey });
     const tryModel = async (model: string) => {
       const t0 = Date.now();
-      const r = await generateText({ model: google(model), prompt, temperature: 0.2, maxRetries: 2 });
+      const r = await generateText({ model: google(model), prompt, temperature: 0.2, maxRetries: 2, abortSignal: AbortSignal.timeout(Number(process.env.LLM_TIMEOUT_MS) || 90_000) });
       return { text: r.text, tokensIn: r.usage?.inputTokens ?? 0, tokensOut: r.usage?.outputTokens ?? 0, ms: Date.now() - t0, model };
     };
     try {

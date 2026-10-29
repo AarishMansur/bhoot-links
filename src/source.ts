@@ -24,7 +24,7 @@ async function fetchBytes(url: string) {
     const res = await request(routeUrl(current), {
       dispatcher: dispatcher(),
       headers: { "user-agent": cfg.userAgent },
-      signal: AbortSignal.timeout(60_000),
+      signal: AbortSignal.timeout(Number(process.env.SOURCE_TIMEOUT_MS) || 60_000),
     });
     const loc = res.headers.location;
     if (res.statusCode >= 300 && res.statusCode < 400 && loc) {

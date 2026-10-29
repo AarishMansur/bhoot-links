@@ -10,7 +10,17 @@
     "toolSaid": "reincarnated"
   },
   {
+    "url": "https://cran.r-project.org/web/packages/explore/vignettes/explore_mtcars.html",
+    "reason": "UND_ERR_CONNECT_TIMEOUT from the build machine only",
+    "toolSaid": "reincarnated"
+  },
+  {
     "url": "http://cse01-iiith.vlabs.ac.in/",
+    "reason": "plain http answered 500 by the build machine's proxy (https upgrade failed too)",
+    "toolSaid": "reincarnated"
+  },
+  {
+    "url": "http://www.ocw.mit.edu/courses/mathematics/",
     "reason": "plain http answered 500 by the build machine's proxy (https upgrade failed too)",
     "toolSaid": "reincarnated"
   },

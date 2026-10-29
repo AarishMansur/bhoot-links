@@ -4,44 +4,64 @@
     "version": "0.1.0",
     "source": "https://vtu.ac.in/pdf/2022_3to8/2cssyll.pdf",
     "sourceType": "pdf",
-    "scannedAt": "2026-10-28T20:18:30.067Z",
+    "scannedAt": "2026-10-29T14:08:51.251Z",
     "mode": "real",
-    "model": null,
-    "browserProvider": "local",
-    "notes": [
-      "Verdicts came from the deterministic rules, not Gemma (no GOOGLE_GENERATIVE_AI_API_KEY).",
-      "Suspicious pages were rendered with local Chrome, not Browserbase."
-    ]
+    "model": "gemma-4-26b-a4b-it",
+    "browserProvider": "browserbase",
+    "notes": []
   },
   "metrics": {
     "links": 106,
     "counts": {
-      "alive": 80,
-      "ghost": 4,
+      "alive": 82,
+      "ghost": 6,
       "possessed": 0,
-      "reincarnated": 11,
-      "unsure": 11
+      "reincarnated": 13,
+      "unsure": 5
     },
     "buckets": {
-      "alive": 78,
-      "dead": 14,
+      "alive": 77,
+      "dead": 16,
       "suspicious": 8,
-      "blocked": 6
+      "blocked": 5
     },
-    "probeMsTotal": 339377,
-    "llmCalls": 0,
+    "probeMsTotal": 366652,
+    "llmCalls": 20,
     "llmRetries": 0,
     "llmRejectedQuotes": 0,
-    "tokensIn": 0,
-    "tokensOut": 0,
-    "llmLatencyMs": [],
+    "tokensIn": 42747,
+    "tokensOut": 27681,
+    "llmLatencyMs": [
+      17193,
+      33576,
+      21665,
+      24515,
+      21879,
+      26758,
+      34450,
+      31752,
+      30228,
+      35413,
+      71768,
+      53125,
+      41773,
+      31362,
+      27372,
+      70962,
+      25261,
+      33425,
+      31586,
+      40281
+    ],
     "browserSessions": 1,
-    "browserbaseSessionIds": [],
-    "browserMinutes": 0.7721666666666667,
+    "browserbaseSessionIds": [
+      "21cfa311-2c61-4abf-ae36-0557d7168a6d"
+    ],
+    "browserMinutes": 7.1862,
     "pagesRendered": 8,
-    "waybackLookups": 21,
-    "waybackFound": 17,
-    "wallMs": 219336
+    "waybackLookups": 23,
+    "waybackFound": 19,
+    "wallMs": 1665474
   },
   "links": [
     {
@@ -75,7 +95,7 @@
         "finalDomain": "nptel.ac.in",
         "offDomain": false,
         "title": "",
-        "ms": 2245
+        "ms": 3258
       },
       "triage": {
         "bucket": "dead",
@@ -91,22 +111,23 @@
         "textSample": "NPTEL PHASE 2 - Courses. NPTEL >> Courses Courses by Discipline Courses by Coordinating Institute Find Courses Search within video Aerospace Engineering (51) Atmospheric Science (7) Automobile Engineering (2) Basic courses(Sem 1 and 2) (38) Biotechnology (41) Chemical Engineering (100) Chemistry and Biochemistry (62) Civil Engineering (136) Computer Science and Engineering (107) Electrical Engineering (82) Electronics & Communication Engineering (114) Engineering Design (14) Environmental Science (4) General (7) Humanities and Social Sciences (85) Management (58) Mathematics (85) Mechanical Engineering (178) Metallurgy and Material Science (59) Mining Engineering (2) Nanotechnology (10) Ocean Engineering (33) Physics (76) Textile Engineering (28) IISc Bangalore (116) IIT Bombay (144) IIT Delhi (116) IIT Guwahati (126) IIT Kanpur (241) IIT Kharagpur (204) IIT Madras (348) IIT Roorkee (84) Discipline : All Aerospace Engineering Atmospheric Science Automobile Engineering Basic courses(Sem 1 and 2) Biotechnology Chemical Engineering Chemistry and Biochemistry Civil Engineering Computer Science and Engineering Electrical Engineering Electronics & Communication Engineering Engineering Design Environmental Science General Humanities and Social Sciences Management Mathematics Mechanical Engineering Metallurgy and Material Science Mining Engineering Nanotechnology Ocean Engineering Physics Textile Engineering Type: All Web Video Institute : All IISc Bangalore IIT Bombay IIT Delhi IIT "
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "reincarnated",
-        "confidence": 0.7,
+        "confidence": 1,
         "evidence": [
           {
             "quote": "HTTP 404",
             "source": "probe"
           },
           {
-            "quote": "capture 20160308062610",
+            "quote": "Mathematics (85)",
             "source": "wayback"
           }
         ],
         "resurrection_url": "https://web.archive.org/web/20160308062610/http://nptel.ac.in/courses.php?disciplineid=111",
-        "ojha_note_hinglish": "Asli page toh chal basa, par 2016 ki copy Wayback pe zinda hai. Yeh wala link use karo."
+        "ojha_note_hinglish": "Link mar gaya tha, par Wayback ne ise wapas zinda kar diya. Tension mat lo!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -138,7 +159,7 @@
         "originalDomain": "www.class-central.com",
         "robotsBlocked": false,
         "textSample": "The IELTS Co-Owner Lost 94% of Its Value. The Reason: Visas. View Close Class Central Courses Class Central Rankings Career Certificates Subjects View all Technology Business Creative STEM Health & Wellness People & Society Personal Growth & Lifestyle View all Subjects Universities The Report Courses from 1000+ universities Rankings Best Courses Best of All Time Best of the Year Most Popular Courses Most Popular of All Time Most Popular of the Year Career Certificates Generative AI UX Design Data Science Finance DevOps Project Management View all Career Certificates Technology Computer Science Artificial Intelligence Data Science Web Development Programming Databases IT & Networking DevOps UX/UI Design Blockchain & Cryptocurrency Data Engineering Extended Reality (XR) Generative AI Cloud Computing Cybersecurity Game Development Product Management View all Technology Business Management & Leadership Finance Entrepreneurship Marketing Strategic Management Project Management Sales Business Software Real Estate Operations Management Professional Development Accounting Supply Chain Management Human Resources View all Business Creative Music Digital Media Visual Arts Design Crafts Performing Arts AI Art View all Creative STEM Mathematics Engineering Science Statistics & Probability Chemistry Physics Environmental Science Astronomy Biology Agriculture View all STEM Health & Wellness Disease & Disorders Public Health Health Care Nursing Mental Health Continuing Medical Education (CME",
-        "textLength": 3444,
+        "textLength": 3462,
         "scriptCount": 13,
         "signals": [],
         "ok": false,
@@ -148,7 +169,7 @@
         "finalDomain": "www.classcentral.com",
         "offDomain": true,
         "title": "404. Not Found.",
-        "ms": 611
+        "ms": 711
       },
       "triage": {
         "bucket": "dead",
@@ -162,18 +183,23 @@
         "error": "never archived"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "ghost",
-        "confidence": 0.8,
+        "confidence": 1,
         "evidence": [
           {
             "quote": "HTTP 404",
             "source": "probe"
+          },
+          {
+            "quote": "no usable capture (never archived)",
+            "source": "wayback"
           }
         ],
         "resurrection_url": null,
-        "ojha_note_hinglish": "Yeh link mar chuka hai aur archive mein bhi aatma nahi mili. Naya resource dhoondna padega."
+        "ojha_note_hinglish": "Link toh bhoot ban gaya hai, beta. Naya link dhund lo.",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -207,7 +233,7 @@
         "finalDomain": "academicearth.org",
         "offDomain": false,
         "title": "750+ Free Online Courses from the Best Colleges - Academic Earth",
-        "ms": 3782
+        "ms": 5088
       },
       "triage": {
         "bucket": "alive",
@@ -251,7 +277,7 @@
         "finalUrl": "http://www.bookstreet.in/",
         "finalDomain": "www.bookstreet.in",
         "offDomain": false,
-        "ms": 44
+        "ms": 48
       },
       "triage": {
         "bucket": "dead",
@@ -265,18 +291,23 @@
         "error": "no clean capture in the newest snapshots"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "ghost",
-        "confidence": 0.8,
+        "confidence": 1,
         "evidence": [
+          {
+            "quote": "ENOTFOUND www.bookstreet.in does not resolve",
+            "source": "probe"
+          },
           {
             "quote": "DNS lookup failed (ENOTFOUND): the domain no longer resolves",
             "source": "probe"
           }
         ],
         "resurrection_url": null,
-        "ojha_note_hinglish": "Yeh link mar chuka hai aur archive mein bhi aatma nahi mili. Naya resource dhoondna padega."
+        "ojha_note_hinglish": "Ye link toh bhoot ban gaya, bilkul nahi mil raha. Kuch aur try karo!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -306,7 +337,7 @@
         "finalDomain": "cse11-iiith.vlabs.ac.in",
         "offDomain": false,
         "title": "Welcome to Virtual Labs",
-        "ms": 2502
+        "ms": 2782
       },
       "triage": {
         "bucket": "alive",
@@ -361,7 +392,7 @@
         "finalDomain": "youtu.be",
         "offDomain": false,
         "title": "Operating System Full Course | Operating System Tutorials for Beginners",
-        "ms": 106
+        "ms": 204
       },
       "triage": {
         "bucket": "alive",
@@ -416,7 +447,7 @@
         "finalDomain": "youtu.be",
         "offDomain": false,
         "title": "Introduction to Operating Systems",
-        "ms": 94
+        "ms": 79
       },
       "triage": {
         "bucket": "alive",
@@ -471,7 +502,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Lecture 1   Introduction to Operating Systems by NPTEL IIT MADRAS",
-        "ms": 1039
+        "ms": 1119
       },
       "triage": {
         "bucket": "alive",
@@ -526,7 +557,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Intro",
-        "ms": 929
+        "ms": 945
       },
       "triage": {
         "bucket": "alive",
@@ -576,7 +607,7 @@
         "finalDomain": "elearning.vtu.ac.in",
         "offDomain": false,
         "title": "",
-        "ms": 2110
+        "ms": 3460
       },
       "triage": {
         "bucket": "dead",
@@ -590,18 +621,23 @@
         "error": "no clean capture in the newest snapshots"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "ghost",
-        "confidence": 0.8,
+        "confidence": 1,
         "evidence": [
           {
             "quote": "HTTP 500 server error",
             "source": "probe"
+          },
+          {
+            "quote": "no usable capture (no clean capture in the newest snapshots)",
+            "source": "wayback"
           }
         ],
         "resurrection_url": null,
-        "ojha_note_hinglish": "Yeh link mar chuka hai aur archive mein bhi aatma nahi mili. Naya resource dhoondna padega."
+        "ojha_note_hinglish": "Link bhoot ban gaya hai, beta. Dusra rasta dhoond lo.",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -631,7 +667,7 @@
         "finalDomain": "nptel.ac.in",
         "offDomain": false,
         "title": "",
-        "ms": 3278
+        "ms": 11065
       },
       "triage": {
         "bucket": "dead",
@@ -647,22 +683,23 @@
         "textSample": "NPTEL :: Computer Science and  Engineering - NOC:Problem Solving through Programming in C. Toggle navigation About us Courses Contact us Enroll now Courses Computer Science and Engineering NOC:Problem Solving through Programming in C (Video) Syllabus Co-ordinated by : IIT Kharagpur Available from : 2017-12-21 Lec :1 Modules / Lectures Week 1 Lecture 1 : Introduction Lecture 2 : Idea of Algorithms Lecture 3 : Flow Chart and Pseudocode Lecture 4 : Introduction to Programming Language Concepts Lecture 5 : Variables and Memory Week 2 Lecture 6 : Types of Software and Compilers Lecture 7 : Introduction to C Programming Language Lecture 8 : Variables and Variable Types in C Lecture 9 : Introducing Functions Lecture 10 : Address and Content of Variables and Types Week 3 Lecture 11 : Assignment Statement and Operators in C Lecture 12 : Arithmetic Expressions and Relational Expressions Lecture 13 : Logical Operators and Change in Control Flow Lecture 14 : Use of Logical Operaotrs in Branching Lecture 15 : Branching : IF - ELSE Statement Week 4 Lecture 16 : IF-ELSE Statement (Contd.) Lecture 17 : Switch statement Lecture 18 : Switch Statement (Contd.) and Introduction to Loops Lecture 19 : Implementing Repetitions (Loops) Lecture 20 : Implementation of Loops with for Statement (Contd.) Week 5 Lecture 21 : For Statement (Contd.) Lecture 22 : Example of If-Else Lecture 23 : Example of Loops Lecture 24 : Example of Loops (Contd.) Lecture 25: Example of Loops (Contd.), Use of FOR Loops Wee"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "reincarnated",
-        "confidence": 0.7,
+        "confidence": 1,
         "evidence": [
           {
             "quote": "HTTP 404",
             "source": "probe"
           },
           {
-            "quote": "capture 20210723183542",
+            "quote": "NPTEL :: Computer Science and  Engineering - NOC:Problem Solving through Programming in C.",
             "source": "wayback"
           }
         ],
         "resurrection_url": "https://web.archive.org/web/20210723183542/https://nptel.ac.in/courses/106/105/106105171/",
-        "ojha_note_hinglish": "Asli page toh chal basa, par 2021 ki copy Wayback pe zinda hai. Yeh wala link use karo."
+        "ojha_note_hinglish": "Link toh mar gaya tha, par Wayback ne ise wapas zinda kar diya! Yeh lo purana content.",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -699,7 +736,7 @@
         "finalDomain": "www.nptelvideos.in",
         "offDomain": false,
         "title": "nptelvideos.in",
-        "ms": 2899
+        "ms": 2521
       },
       "triage": {
         "bucket": "suspicious",
@@ -710,21 +747,20 @@
       },
       "render": {
         "url": "http://www.nptelvideos.in/2012/11/data-structures-and-algorithms.html",
-        "finalUrl": "https://www.nptelvideos.in/2012/11/data-structures-and-algorithms.html",
-        "title": "nptelvideos.in",
-        "topic": "",
-        "language": "",
+        "finalUrl": "http://resultfindernow.com/?dn=nptelvideos.in&sksubid=529059&_slsen=1",
+        "title": "Buy this domain - The domain nptelvideos.in may be for sale!",
+        "topic": "A domain for sale page for nptelvideos.in.",
+        "language": "English",
         "gambling": false,
         "casino": false,
         "parked": true,
         "signals": [
-          "parked:domain may be for sale",
-          "parked:this domain may be for sale"
+          "page:Buy this domain - The domain nptelvideos.in may be for sale!"
         ],
-        "textSample": "nptelvideos.in Find information, resources and relevant links for nptelvideos.in. This domain may be for sale. Terms of Service | Privacy Policy nptelvideos.in may be for sale, click to inquire",
+        "textSample": "Do Not Sell or Share My Personal Information",
         "screenshot": "shots/dfb2cc813b.jpg",
-        "extractedBy": "heuristic",
-        "ms": 6247
+        "extractedBy": "stagehand",
+        "ms": 61796
       },
       "wayback": {
         "found": true,
@@ -734,22 +770,23 @@
         "textSample": "Data Structures and Algorithms | NPTEL Online Videos, Courses - IIT Video Lectures. NPTEL Online Videos, Courses - IIT Video Lectures Well Organized! Data Structures and Algorithms Data Structures and Algorithms Lecture Series on Data Structures and Algorithms by Dr. Naveen Garg, Department of Computer Science and Engineering ,IIT Delhi. Lecture - 1 Introduction to Data Structures and Algorithms Lecture - 2 Stacks Lecture - 3 Queues and Linked Lists Lecture - 4 Dictionaries Lecture - 5 Hashing Lecture - 6 Trees Lecture - 7 Tree Walks / Traversals Lecture - 8 Ordered Dictionaries Lecture - 9 Deletion Lecture - 10 Quick Sort Lecture - 11 AVL Trees Lecture - 12 AVL Trees Lecture - 13 Trees Lecture - 14 Red Black Trees Lecture - 15 Insertion in Red Black Trees Lecture - 16 Disk Based Data Structures Lecture - 17 Case Study: Searching for Patterns Lecture - 18 Tries Lecture - 19 Data Compression Lecture - 20 Priority Queues Lecture - 21 Binary Heaps Lecture - 22 Why Sorting Lecture - 23 More Sorting Lecture - 24 Graphs Lecture - 25 Data Structures for Graphs Lecture - 26 Two Applications of Breadth First Search Lecture - 27 Depth First Search Lecture - 28 Applications of DFS Lecture - 29 DFS in Directed Graphs Lecture - 30 Applications of DFS in Directed Graphs Lecture - 31 Minimum Spanning Trees Lecture - 32 The Union Lecture - 33 Prims Algorithm for Minimum Spanning Trees Lecture - 34 Single Source Shortest Paths Lecture - 35 Correctness of Dijkstras Algorithm Email This BlogThi"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "reincarnated",
-        "confidence": 0.7,
+        "confidence": 1,
         "evidence": [
           {
-            "quote": "domain-parking words in the page",
-            "source": "probe"
+            "quote": "Buy this domain - The domain nptelvideos.in may be for sale!",
+            "source": "render"
           },
           {
-            "quote": "capture 20210226215827",
+            "quote": "Data Structures and Algorithms | NPTEL Online Videos, Courses - IIT Video Lectures.",
             "source": "wayback"
           }
         ],
         "resurrection_url": "https://web.archive.org/web/20210226215827/http://www.nptelvideos.in/2012/11/data-structures-and-algorithms.html",
-        "ojha_note_hinglish": "Is domain pe ab koi aur bhoot baitha hai, asli page ki 2021 wali aatma Wayback pe mil gayi. Wahi use karo."
+        "ojha_note_hinglish": "Link bech diya gaya hai, par tension mat lo, purana content Wayback pe mil jayega!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -784,7 +821,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Lec-13 Arrays: Addresses And Contents",
-        "ms": 789
+        "ms": 31
       },
       "triage": {
         "bucket": "alive",
@@ -834,7 +871,7 @@
         "finalDomain": "ds2-iiith.vlabs.ac.in",
         "offDomain": false,
         "title": "Virtual Labs",
-        "ms": 2656
+        "ms": 2412
       },
       "triage": {
         "bucket": "alive",
@@ -884,7 +921,7 @@
         "finalDomain": "nptel.ac.in",
         "offDomain": false,
         "title": "",
-        "ms": 3910
+        "ms": 8158
       },
       "triage": {
         "bucket": "dead",
@@ -900,22 +937,23 @@
         "textSample": "NPTEL :: Computer Science and  Engineering - Data Structures And Algorithms. Toggle navigation About us Courses Contact us Courses Computer Science and Engineering Data Structures And Algorithms (Video) Syllabus Co-ordinated by : IIT Delhi Available from : 2009-12-31 Lec :1 Modules / Lectures Data Structures And Algorithms Introduction to Data Structures and Algorithms Stacks Queues and Linked Lists Dictionaries Hashing Trees Tree Walks / Traversals Ordered Dictionaries Deletion Quick Sort AVL Trees AVL Trees Trees Red Black Trees Insertion in Red Black Trees Disk Based Data Structures Case Study: Searching for Patterns Tries Data Compression Priority Queues Binary Heaps Why Sorting More Sorting Graphs Data Structures for Graphs Two Applications of Breadth First Search Depth First Search Applications of DFS DFS in Directed Graphs Applications of DFS in Directed Graphs Minimum Spanning Trees The Union Prims Algorithm for Minimum Spanning Trees Single Source Shortest Paths Correctness of Dijkstras Algorithm Single Source Shortest Paths Watch on YouTube Assignments Transcripts Books Module Name Download English Sl.No Chapter Name English 1 Introduction to Data Structures and Algorithms Download Verified 2 Stacks Download Verified 3 Queues and Linked Lists Download Verified 4 Dictionaries Download Verified 5 Hashing Download Verified 6 Trees Download Verified 7 Tree Walks / Traversals Download Verified 8 Ordered Dictionaries Download Verified 9 Deletion Download Verified 10 Quick"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "reincarnated",
-        "confidence": 0.7,
+        "confidence": 1,
         "evidence": [
           {
             "quote": "HTTP 404",
             "source": "probe"
           },
           {
-            "quote": "capture 20210516180654",
+            "quote": "NPTEL :: Computer Science and  Engineering - Data Structures And Algorithms.",
             "source": "wayback"
           }
         ],
         "resurrection_url": "https://web.archive.org/web/20210516180654/https://nptel.ac.in/courses/106/102/106102064/",
-        "ojha_note_hinglish": "Asli page toh chal basa, par 2021 ki copy Wayback pe zinda hai. Yeh wala link use karo."
+        "ojha_note_hinglish": "Link gayab tha, par maine ise Wayback se wapas bula liya. Padhai shuru karo!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -945,7 +983,7 @@
         "finalDomain": "ds1-iiith.vlabs.ac.in",
         "offDomain": false,
         "title": "Virtual Labs",
-        "ms": 2826
+        "ms": 2658
       },
       "triage": {
         "bucket": "alive",
@@ -995,7 +1033,7 @@
         "finalDomain": "ds1-iiith.vlabs.ac.in",
         "offDomain": false,
         "title": "Virtual Labs",
-        "ms": 562
+        "ms": 1964
       },
       "triage": {
         "bucket": "alive",
@@ -1045,7 +1083,7 @@
         "finalDomain": "ds1-iiith.vlabs.ac.in",
         "offDomain": false,
         "title": "Welcome to Virtual Labs",
-        "ms": 504
+        "ms": 510
       },
       "triage": {
         "bucket": "alive",
@@ -1095,7 +1133,7 @@
         "finalDomain": "ds1-iiith.vlabs.ac.in",
         "offDomain": false,
         "title": "Virtual Labs",
-        "ms": 554
+        "ms": 552
       },
       "triage": {
         "bucket": "alive",
@@ -1145,7 +1183,7 @@
         "finalDomain": "ds1-iiith.vlabs.ac.in",
         "offDomain": false,
         "title": "Virtual Labs",
-        "ms": 1000
+        "ms": 549
       },
       "triage": {
         "bucket": "alive",
@@ -1195,7 +1233,7 @@
         "finalDomain": "infyspringboard.onwingspan.com",
         "offDomain": false,
         "title": "",
-        "ms": 716
+        "ms": 332
       },
       "triage": {
         "bucket": "suspicious",
@@ -1206,17 +1244,19 @@
       "render": {
         "url": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_013501595428077568125",
         "finalUrl": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_013501595428077568125",
-        "title": "",
-        "topic": "",
-        "language": "",
+        "title": "404 Not Found",
+        "topic": "Access error message for Infosys Springboard based on geographic location.",
+        "language": "English",
         "gambling": false,
         "casino": false,
         "parked": false,
-        "signals": [],
-        "textSample": "By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation and analyze site usage.Cookie Policy Cookies Settings Accept All Cookies",
+        "signals": [
+          "page:You are trying access an instance of Infosys Springboard which is not accessible in your country."
+        ],
+        "textSample": "Dear Learner, You are trying access an instance of Infosys Springboard which is not accessible in your country. For your convenience we have listed the geo specific Infosys Springboard URLs: For Springboard US: https://infyspringboard.us.onwingspan.com For Springboard Europe: https://infyspringboard.eu.onwingspan.com For Springboard Australia New Zealand: https://infosysspringboard.ausnz.onwingspan.com",
         "screenshot": "shots/16baefb1ca.jpg",
-        "extractedBy": "heuristic",
-        "ms": 3145
+        "extractedBy": "stagehand",
+        "ms": 59381
       },
       "wayback": {
         "found": true,
@@ -1228,16 +1268,19 @@
       "verdict": {
         "by": "rules",
         "attempts": 0,
-        "status": "unsure",
-        "confidence": 0.4,
+        "status": "alive",
+        "confidence": 0.6,
         "evidence": [
           {
-            "quote": "almost no static text (0 chars) but 10 script tag(s): content only appears after JS",
-            "source": "probe"
+            "quote": "404 Not Found",
+            "source": "render"
           }
         ],
         "resurrection_url": null,
-        "ojha_note_hinglish": "Kuch toh gadbad hai, par pakka nahi bol sakta. Ek baar khud khol ke dekho."
+        "ojha_note_hinglish": "JavaScript chalne ke baad asli page dikh gaya, koi bhoot nahi. Link theek hai.",
+        "rejected": [
+          "llm error: The operation was aborted due to timeout"
+        ]
       }
     },
     {
@@ -1271,7 +1314,7 @@
         "finalDomain": "www.jdoodle.com",
         "offDomain": false,
         "title": "Online Java Compiler - Run Java Code in Browser | JDoodle",
-        "ms": 1223
+        "ms": 1205
       },
       "triage": {
         "bucket": "alive",
@@ -1313,7 +1356,7 @@
         "finalUrl": "https://sd.blackball.lv/library/thinking_in_java_4th_edition.pdf",
         "finalDomain": "sd.blackball.lv",
         "offDomain": false,
-        "ms": 1905
+        "ms": 1739
       },
       "triage": {
         "bucket": "blocked",
@@ -1367,7 +1410,7 @@
         "finalDomain": "www.geeksforgeeks.org",
         "offDomain": false,
         "title": "Java Tutorial - GeeksforGeeks",
-        "ms": 1179
+        "ms": 1176
       },
       "triage": {
         "bucket": "alive",
@@ -1417,7 +1460,7 @@
         "finalDomain": "ocw.mit.edu",
         "offDomain": false,
         "title": "Introduction to Programming in Java | Electrical Engineering and Computer Science | MIT OpenCourseWare",
-        "ms": 1536
+        "ms": 1590
       },
       "triage": {
         "bucket": "alive",
@@ -1456,7 +1499,7 @@
         ],
         "originalDomain": "www.w3schools.com",
         "robotsBlocked": false,
-        "textSample": "Access Denied You don't have permission to access \"http://www.w3schools.com/java/\" on this server. Reference #18.84620317.1793218502.5423db4c https://errors.edgesuite.net/18.84620317.1793218502.5423db4c",
+        "textSample": "Access Denied You don't have permission to access \"http://www.w3schools.com/java/\" on this server. Reference #18.92620317.1793281281.74dd2bef https://errors.edgesuite.net/18.92620317.1793281281.74dd2bef",
         "textLength": 202,
         "scriptCount": 0,
         "signals": [],
@@ -1467,7 +1510,7 @@
         "finalDomain": "www.w3schools.com",
         "offDomain": false,
         "title": "Access Denied",
-        "ms": 131
+        "ms": 212
       },
       "triage": {
         "bucket": "blocked",
@@ -1511,7 +1554,7 @@
         "finalUrl": "https://www.javatpoint.com/java-tutorial",
         "finalDomain": "www.javatpoint.com",
         "offDomain": false,
-        "ms": 314
+        "ms": 277
       },
       "triage": {
         "bucket": "dead",
@@ -1527,22 +1570,23 @@
         "textSample": "Java Tutorial | Learn Java Programming - Javatpoint. Tutorials × Python Python Django Numpy Pandas Tkinter Pytorch Flask OpenCV AI, ML and Data Science Artificial Intelligence Machine Learning Data Science Deep Learning TensorFlow Artificial Neural Network Matplotlib Python Scipy Java Java Servlet JSP Spring Boot Spring Framework Hibernate JavaFX Java Web Services B.Tech and MCA DBMS Data Structures Operating System Computer Network DAA Computer Organization Software Engineering Data Mining Web Technology HTML CSS JavaScript Jquery Angular-8 React JS React Native Node JS Software Testing Software Testing Selenium JIRA JMeter Postman TestNG SoapUI Cucumber Interview × Technical Interview C C++ Php Java Python JavaScript TypeScript Java Interview JDBC Servlet Maven Jenkins Spring Spring Boot JDB Hibernate JSF Web Interview HTML CSS JavaScript Jquery Angular Node-JS AJAX Database Interview DBMS SQL PL/SQL Oracle MySQL MongoDB Redis MariaDB Company Interviews IBM Adobe Microsoft Amazon TCS HCL Wipro DXC Accenture Capgemini Space X Ericsson Infosy IGate EXL IndiaMART Sapient Compiler × Online Compilers Python Online Compiler J Java Online Compiler PHP Online Compiler C Online Compiler C++ Online Compiler HTML Online Compiler JavaScript Online Compiler TypeScript Online Compiler R Online Compiler Sw Swift Online Compiler Home Python Java JavaScript HTML SQL PHP C# C++ DS Aptitude Reasoning Selenium DBMS C Andriod Interview Q Java Tutorial Java Tutorial | Learn Java Programming Hist"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "reincarnated",
-        "confidence": 0.7,
+        "confidence": 1,
         "evidence": [
           {
-            "quote": "no response (ECONNRESET)",
+            "quote": "error: ECONNRESET Client network socket disconnected before secure TLS connection was established",
             "source": "probe"
           },
           {
-            "quote": "capture 20250130103507",
+            "quote": "Java Tutorial | Learn Java Programming - Javatpoint",
             "source": "wayback"
           }
         ],
         "resurrection_url": "https://web.archive.org/web/20250130103507/https://www.javatpoint.com/java-tutorial",
-        "ojha_note_hinglish": "Asli page toh chal basa, par 2025 ki copy Wayback pe zinda hai. Yeh wala link use karo."
+        "ojha_note_hinglish": "Link mar gaya tha, par Wayback ne ise wapas zinda kar diya. Tension mat lo, padhai chalu rakho!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -1572,7 +1616,7 @@
         "finalDomain": "www.java.com",
         "offDomain": false,
         "title": "Java Help Center - Installing Java",
-        "ms": 219
+        "ms": 349
       },
       "triage": {
         "bucket": "alive",
@@ -1627,7 +1671,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "C++ Tutorial for Beginners | Learn C++ Programming Language | Introduction to C++ | Edureka",
-        "ms": 496
+        "ms": 24
       },
       "triage": {
         "bucket": "alive",
@@ -1682,7 +1726,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Functions in C++ Programming | Part - 1",
-        "ms": 759
+        "ms": 25
       },
       "triage": {
         "bucket": "alive",
@@ -1721,7 +1765,7 @@
         ],
         "originalDomain": "www.w3schools.com",
         "robotsBlocked": false,
-        "textSample": "Access Denied You don't have permission to access \"http://www.w3schools.com/cpp/cpp_intro.asp\" on this server. Reference #18.84620317.1793218507.5424533b https://errors.edgesuite.net/18.84620317.1793218507.5424533b",
+        "textSample": "Access Denied You don't have permission to access \"http://www.w3schools.com/cpp/cpp_intro.asp\" on this server. Reference #18.92620317.1793281290.74dde122 https://errors.edgesuite.net/18.92620317.1793281290.74dde122",
         "textLength": 214,
         "scriptCount": 0,
         "signals": [],
@@ -1732,7 +1776,7 @@
         "finalDomain": "www.w3schools.com",
         "offDomain": false,
         "title": "Access Denied",
-        "ms": 53
+        "ms": 56
       },
       "triage": {
         "bucket": "blocked",
@@ -1782,7 +1826,7 @@
         "finalDomain": "www.edx.org",
         "offDomain": false,
         "title": "",
-        "ms": 533
+        "ms": 630
       },
       "triage": {
         "bucket": "dead",
@@ -1798,22 +1842,23 @@
         "textSample": "Introduction to C++ | edX. Skip to main content Toggle mobile menu Sign In Register for free Courses All Courses & Programs Programs & Degrees Boot Camps Degrees & ProgramsNew Boot Camps Schools & Partners Schools & Partners edX For Business Search for courses and programs Submit your search query Submit your search query Close site banner. Catalog Computer Science Courses Computer Science Courses Introduction to C++ Get a brief introduction to the C++ language from the experts at Microsoft. ... show all This course is archived Future dates to be announced About this course What you'll learn Instructors Ways to take this course edX For Business Catalog Computer Science Courses Computer Science Courses Introduction to C++ Get a brief introduction to the C++ language from the experts at Microsoft. 4 weeks 3–5 hours per week Self-paced Progress at your own speed This course is archived Future dates to be announced Introduction to C++ About About What you'll learn Instructors Ways to enroll About this course Skip About this course C++ is a general purpose programming language that supports various computer programming models such as object-oriented programming and generic programming. It was created by Bjarne Stroustrup and, “Its main purpose was to make writing good programs easier and more pleasant for the individual programmer.”* By learning C++, you can create applications that will run on a wide variety of hardware platforms such as personal computers running Windows, Linux,"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "reincarnated",
-        "confidence": 0.7,
+        "confidence": 1,
         "evidence": [
           {
             "quote": "HTTP 404",
             "source": "probe"
           },
           {
-            "quote": "capture 20230606154853",
+            "quote": "Introduction to C++ | edX",
             "source": "wayback"
           }
         ],
         "resurrection_url": "https://web.archive.org/web/20230606154853/https://www.edx.org/course/introduction-to-c-3",
-        "ojha_note_hinglish": "Asli page toh chal basa, par 2023 ki copy Wayback pe zinda hai. Yeh wala link use karo."
+        "ojha_note_hinglish": "Link toh gaya tha, par Wayback ne ise wapas zinda kar diya! Tension mat lo, ye raha naya link.",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -1833,7 +1878,7 @@
         "originalDomain": "www.simplilearn.com",
         "robotsBlocked": false,
         "textSample": "All Courses All Courses For Business Resources Free Courses Free Resources Authors Learn with Alby™ AI More Explore Featured Categories AI Data Science Machine Learning Devops AWS Python AI Automation Explore by Role AI Engineer Data Analyst Project Manager Business Analyst Product Manager Scrum Master Cloud Engineer Explore by Skill Web Development Business Management Prompt Engineering Cloud Networking Agentic AI UX Design Programming Company Reviews Hire From Us Become a Partner Become an Instructor Leadership Council Login Data Science & Business Analytics Data Science & Business Analytics AI & Machine Learning Project Management Cyber Security Cloud Computing DevOps Business and Leadership Quality Management Software Development Agile and Scrum IT Service and Architecture Digital Marketing Big Data Career Fast-track Enterprise Other Segments Articles Ebooks Free Practice Tests On-demand Webinars Tutorials Home Resources Data Science & Business Analytics Excel Tutorial for Beginners Data Analysis in Excel: The Best Guide Tutorial Playlist Excel Tutorial Overview Your One-Stop Solution to Understand Excel Basics Lesson - 1 How to Create An Excel Worksheet: Step by Step Guide Lesson - 2 Create and Manage Workbooks and Worksheets: Excel 2013 Lesson - 3 Merging and Splitting Cells in Excel: The Best Introduction Lesson - 4 A Perfect Guide for All You Need to Know About Data Formatting in Excel Lesson - 5 Page Setup in Excel and Its Implementation Lesson - 6 How to Sort Data I",
-        "textLength": 21377,
+        "textLength": 20421,
         "scriptCount": 18,
         "signals": [],
         "ok": true,
@@ -1843,7 +1888,7 @@
         "finalDomain": "www.simplilearn.com",
         "offDomain": false,
         "title": "How to Add Data Analysis In Excel: The Best Guide [2024 Edition]",
-        "ms": 145
+        "ms": 155
       },
       "triage": {
         "bucket": "alive",
@@ -1876,36 +1921,50 @@
         "url": "https://cran.r-project.org/web/packages/explore/vignettes/explore_mtcars.html",
         "chain": [],
         "originalDomain": "cran.r-project.org",
-        "robotsBlocked": true,
+        "robotsBlocked": false,
         "textSample": "",
         "textLength": 0,
         "scriptCount": 0,
         "signals": [],
         "ok": false,
+        "errorCode": "UND_ERR_CONNECT_TIMEOUT",
+        "error": "Connect Timeout Error (attempted address: cran.r-project.org:443, timeout: 10000ms)",
         "finalUrl": "https://cran.r-project.org/web/packages/explore/vignettes/explore_mtcars.html",
         "finalDomain": "cran.r-project.org",
         "offDomain": false,
-        "ms": 1060
+        "ms": 20966
       },
       "triage": {
-        "bucket": "blocked",
+        "bucket": "dead",
         "reasons": [
-          "robots.txt disallows this path, not fetched"
+          "no response (UND_ERR_CONNECT_TIMEOUT)"
         ]
       },
+      "wayback": {
+        "found": true,
+        "checked": 1,
+        "timestamp": "20231003125626",
+        "snapshotUrl": "https://web.archive.org/web/20231003125626/http://cran.r-project.org/web/packages/explore/vignettes/explore_mtcars.html",
+        "textSample": "explore_mtcars. explore_mtcars Roland Krasser 2023-01-14 How to explore the mtcars dataset using the explore package. The explore package simplifies Exploratory Data Analysis (EDA). Get faster insights with less code! The mtcars dataset comes with the dplyr package. We use the packages explore and dplyr (for mtcars, select, mutate and the %>% operator). library (dplyr) library (explore) Explore dataset mtcars %>% explore_tbl () mtcars %>% describe () #> # A tibble: 11 × 8 #> variable type na na_pct unique min mean max #> <chr> <chr> <int> <dbl> <int> <dbl> <dbl> <dbl> #> 1 mpg dbl 0 0 25 10.4 20.1 33.9 #> 2 cyl dbl 0 0 3 4 6.19 8 #> 3 disp dbl 0 0 27 71.1 231. 472 #> 4 hp dbl 0 0 22 52 147. 335 #> 5 drat dbl 0 0 22 2.76 3.6 4.93 #> 6 wt dbl 0 0 29 1.51 3.22 5.42 #> 7 qsec dbl 0 0 30 14.5 17.8 22.9 #> 8 vs dbl 0 0 2 0 0.44 1 #> 9 am dbl 0 0 2 0 0.41 1 #> 10 gear dbl 0 0 3 3 3.69 5 #> 11 carb dbl 0 0 6 1 2.81 8 The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models). variable description mpg Miles/(US) gallon cyl Number of cylinders disp Displacement (cu.in.) hp Gross horsepower drat Rear axle ratio wt Weight (lb/1000) qsec 1/4 mile time vs V/S am Transmission (0 = automatic, 1 = manual) gear Number of forward gears carb Number of carburetors Explore variables mtcars %>% explore_all () Number of gears? Is there a difference between cars with 3,4 and 5 gea"
+      },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
-        "status": "unsure",
-        "confidence": 0.3,
+        "status": "reincarnated",
+        "confidence": 1,
         "evidence": [
           {
-            "quote": "robots.txt disallows this path, not fetched",
+            "quote": "UND_ERR_CONNECT_TIMEOUT Connect Timeout Error",
             "source": "probe"
+          },
+          {
+            "quote": "How to explore the mtcars dataset using the explore package.",
+            "source": "wayback"
           }
         ],
-        "resurrection_url": null,
-        "ojha_note_hinglish": "Darwaza band hai, andar jhaank nahi paaya. Ek baar khud browser mein khol ke dekho."
+        "resurrection_url": "https://web.archive.org/web/20231003125626/http://cran.r-project.org/web/packages/explore/vignettes/explore_mtcars.html",
+        "ojha_note_hinglish": "Link dead tha, par Wayback ne ise punarjanm de diya! Ab padhai karo.",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -1924,7 +1983,7 @@
         ],
         "originalDomain": "www.w3schools.com",
         "robotsBlocked": false,
-        "textSample": "Access Denied You don't have permission to access \"http://www.w3schools.com/r/r_stat_data_set.asp\" on this server. Reference #18.92620317.1793218508.5c0c6db0 https://errors.edgesuite.net/18.92620317.1793218508.5c0c6db0",
+        "textSample": "Access Denied You don't have permission to access \"http://www.w3schools.com/r/r_stat_data_set.asp\" on this server. Reference #18.92620317.1793281291.74ddf3fb https://errors.edgesuite.net/18.92620317.1793281291.74ddf3fb",
         "textLength": 218,
         "scriptCount": 0,
         "signals": [],
@@ -1935,7 +1994,7 @@
         "finalDomain": "www.w3schools.com",
         "offDomain": false,
         "title": "Access Denied",
-        "ms": 68
+        "ms": 65
       },
       "triage": {
         "bucket": "blocked",
@@ -1985,7 +2044,7 @@
         "finalDomain": "rpubs.com",
         "offDomain": false,
         "title": "RPubs - mtcars analysis in R",
-        "ms": 1355
+        "ms": 2484
       },
       "triage": {
         "bucket": "suspicious",
@@ -1996,17 +2055,21 @@
       "render": {
         "url": "https://rpubs.com/BillB/217355",
         "finalUrl": "https://rpubs.com/BillB/217355",
-        "title": "RPubs - mtcars analysis in R",
-        "topic": "",
-        "language": "",
+        "title": "Analysis of mtcars",
+        "topic": "Exploratory analysis of the mtcars dataset focusing on fuel economy, horsepower, and cylinders.",
+        "language": "English",
         "gambling": false,
         "casino": false,
         "parked": false,
-        "signals": [],
+        "signals": [
+          "page:As climate change becomes an ever more real threat to the Earth in the minds of leaders across the world, many governments are taking action to mitigate greenhouse gas emissions.",
+          "page:Since this issue is so relevant to today’s engineering challenges and protecting the environment, our team has decided to analyze data in order to explore which avenues may be considered by engineering teams when attempting to meet fuel economy standards.",
+          "page:Our exploratory analysis will be useful as it will delve into the various factors which may have some sort of influence on fuel economy (miles per gallon)."
+        ],
         "textSample": "RPubs by RStudio Sign in Register mtcars analysis in R by Bill B Last updated about 10 years ago Comments (–) Share Hide Toolbars",
         "screenshot": "shots/7dfed8ffc3.jpg",
-        "extractedBy": "heuristic",
-        "ms": 11032
+        "extractedBy": "stagehand",
+        "ms": 78268
       },
       "wayback": {
         "found": true,
@@ -2016,18 +2079,23 @@
         "textSample": "RPubs - mtcars analysis in R. Sign In Username or Email Password Forgot your password? Sign In Cancel R Pubs by RStudio Sign in Register mtcars analysis in R by Bill B Last updated over 9 years ago Hide Comments (–) Share Hide Toolbars × Post on: Twitter Facebook Google+ Or copy & paste this link into an email or IM:"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "alive",
-        "confidence": 0.6,
+        "confidence": 1,
         "evidence": [
           {
             "quote": "RPubs - mtcars analysis in R",
-            "source": "render"
+            "source": "probe"
+          },
+          {
+            "quote": "mtcars analysis in R by Bill B",
+            "source": "probe"
           }
         ],
         "resurrection_url": null,
-        "ojha_note_hinglish": "JavaScript chalne ke baad asli page dikh gaya, koi bhoot nahi. Link theek hai."
+        "ojha_note_hinglish": "Fikar mat kar, link ekdum sahi hai. Padhai shuru kar!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -2057,7 +2125,7 @@
         "finalDomain": "git-scm.com",
         "offDomain": false,
         "title": "Git",
-        "ms": 172
+        "ms": 97
       },
       "triage": {
         "bucket": "alive",
@@ -2107,7 +2175,7 @@
         "finalDomain": "infyspringboard.onwingspan.com",
         "offDomain": false,
         "title": "",
-        "ms": 62
+        "ms": 49
       },
       "triage": {
         "bucket": "suspicious",
@@ -2117,18 +2185,20 @@
       },
       "render": {
         "url": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_0130944433473699842782_shared",
-        "finalUrl": "https://infyspringboard.onwingspan.com/web/en/login?ref=%2Fapp%2Ftoc%2Flex_auth_0130944433473699842782_shared%2Foverview",
-        "title": "",
-        "topic": "",
-        "language": "",
+        "finalUrl": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_0130944433473699842782_shared",
+        "title": "404 Not Found",
+        "topic": "Access denied to Infosys Springboard due to geographic location restrictions",
+        "language": "English",
         "gambling": false,
         "casino": false,
         "parked": false,
-        "signals": [],
-        "textSample": "",
+        "signals": [
+          "page:You are trying access an instance of Infosys Springboard which is not accessible in your country."
+        ],
+        "textSample": "Dear Learner, You are trying access an instance of Infosys Springboard which is not accessible in your country. For your convenience we have listed the geo specific Infosys Springboard URLs: For Springboard US: https://infyspringboard.us.onwingspan.com For Springboard Europe: https://infyspringboard.eu.onwingspan.com For Springboard Australia New Zealand: https://infosysspringboard.ausnz.onwingspan.com",
         "screenshot": "shots/18b85c89e5.jpg",
-        "extractedBy": "heuristic",
-        "ms": 5071
+        "extractedBy": "stagehand",
+        "ms": 73894
       },
       "wayback": {
         "found": true,
@@ -2138,18 +2208,23 @@
         "textSample": "404 Not Found. Dear Learner, You are trying access an instance of Infosys Springboard which is not accessible in your country. For your convenience we have listed the geo specific Infosys Springboard URLs: For Springboard US: https://infyspringboard.us.onwingspan.com For Springboard Europe: https://infyspringboard.eu.onwingspan.com For Springboard Australia New Zealand: https://infosysspringboard.ausnz.onwingspan.com"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
-        "status": "unsure",
-        "confidence": 0.4,
+        "status": "ghost",
+        "confidence": 1,
         "evidence": [
           {
-            "quote": "https://infyspringboard.onwingspan.com/web/en/login?ref=%2Fapp%2Ftoc%2Flex_auth_0130944433473699842782_shared%2Foverview",
+            "quote": "404 Not Found",
+            "source": "render"
+          },
+          {
+            "quote": "You are trying access an instance of Infosys Springboard which is not accessible in your country.",
             "source": "render"
           }
         ],
         "resurrection_url": null,
-        "ojha_note_hinglish": "Page login ke peeche chhupa hai. Bina account ke students ko kuch nahi dikhega, yeh syllabus mein likhna chahiye."
+        "ojha_note_hinglish": "Bhai, ye link toh bhatak gaya hai. Location restriction ki wajah se content nahi mil raha.",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -2179,7 +2254,7 @@
         "finalDomain": "infyspringboard.onwingspan.com",
         "offDomain": false,
         "title": "",
-        "ms": 12
+        "ms": 11
       },
       "triage": {
         "bucket": "suspicious",
@@ -2189,18 +2264,20 @@
       },
       "render": {
         "url": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_01330134712177459211926_share",
-        "finalUrl": "https://infyspringboard.onwingspan.com/web/en/login?ref=%2Fapp%2Ftoc%2Flex_auth_01330134712177459211926_share%2Foverview",
-        "title": "Infosys Springboard",
-        "topic": "",
-        "language": "",
+        "finalUrl": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_01330134712177459211926_share",
+        "title": "404 Not Found",
+        "topic": "Geo-specific Infosys Springboard access error page",
+        "language": "English",
         "gambling": false,
         "casino": false,
         "parked": false,
-        "signals": [],
-        "textSample": "",
+        "signals": [
+          "page:You are trying access an instance of Infosys Springboard which is not accessible in your country."
+        ],
+        "textSample": "Dear Learner, You are trying access an instance of Infosys Springboard which is not accessible in your country. For your convenience we have listed the geo specific Infosys Springboard URLs: For Springboard US: https://infyspringboard.us.onwingspan.com For Springboard Europe: https://infyspringboard.eu.onwingspan.com For Springboard Australia New Zealand: https://infosysspringboard.ausnz.onwingspan.com",
         "screenshot": "shots/e46bdee06e.jpg",
-        "extractedBy": "heuristic",
-        "ms": 4806
+        "extractedBy": "stagehand",
+        "ms": 19726
       },
       "wayback": {
         "found": true,
@@ -2210,18 +2287,23 @@
         "textSample": "404 Not Found. Dear Learner, You are trying access an instance of Infosys Springboard which is not accessible in your country. For your convenience we have listed the geo specific Infosys Springboard URLs: For Springboard US: https://infyspringboard.us.onwingspan.com For Springboard Europe: https://infyspringboard.eu.onwingspan.com For Springboard Australia New Zealand: https://infosysspringboard.ausnz.onwingspan.com"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
-        "status": "unsure",
-        "confidence": 0.4,
+        "status": "ghost",
+        "confidence": 1,
         "evidence": [
           {
-            "quote": "https://infyspringboard.onwingspan.com/web/en/login?ref=%2Fapp%2Ftoc%2Flex_auth_01330134712177459211926_share%2Foverview",
+            "quote": "rendered title: 404 Not Found",
+            "source": "render"
+          },
+          {
+            "quote": "You are trying access an instance of Infosys Springboard which is not accessible in your country.",
             "source": "render"
           }
         ],
         "resurrection_url": null,
-        "ojha_note_hinglish": "Page login ke peeche chhupa hai. Bina account ke students ko kuch nahi dikhega, yeh syllabus mein likhna chahiye."
+        "ojha_note_hinglish": "Bhai, ye link toh bhatak gaya hai. Geo-restriction ki wajah se content nahi mil raha.",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -2256,7 +2338,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#10 Python Tutorial for Beginners | Data Types in Python",
-        "ms": 1076
+        "ms": 448
       },
       "triage": {
         "bucket": "alive",
@@ -2311,7 +2393,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#11 Python Tutorial for Beginners | Operators in Python",
-        "ms": 1737
+        "ms": 997
       },
       "triage": {
         "bucket": "alive",
@@ -2366,7 +2448,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#19 Python Tutorial for Beginners | If Elif Else Statement in Python",
-        "ms": 2456
+        "ms": 996
       },
       "triage": {
         "bucket": "alive",
@@ -2421,7 +2503,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#21 Python Tutorial for Beginners | For Loop in Python",
-        "ms": 3423
+        "ms": 1002
       },
       "triage": {
         "bucket": "alive",
@@ -2476,7 +2558,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#20 Python Tutorial for Beginners | While Loop in Python",
-        "ms": 4009
+        "ms": 1020
       },
       "triage": {
         "bucket": "alive",
@@ -2531,7 +2613,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#63 Python Tutorial for Beginners | Exception Handling",
-        "ms": 4937
+        "ms": 1967
       },
       "triage": {
         "bucket": "alive",
@@ -2586,7 +2668,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#32 Python Tutorial for Beginners | Functions in Python",
-        "ms": 4989
+        "ms": 1981
       },
       "triage": {
         "bucket": "alive",
@@ -2641,7 +2723,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#33 Python Tutorial for Beginners | Function Arguments in Python",
-        "ms": 4992
+        "ms": 2762
       },
       "triage": {
         "bucket": "alive",
@@ -2696,7 +2778,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Return Statement | Python | Tutorial 15",
-        "ms": 5961
+        "ms": 3709
       },
       "triage": {
         "bucket": "alive",
@@ -2751,7 +2833,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Python Strings Tutorial | How To Use Strings In Python | Python Tutorial | Python Training | Edureka",
-        "ms": 6004
+        "ms": 3996
       },
       "triage": {
         "bucket": "alive",
@@ -2806,7 +2888,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "STRING METHODS & OPERATIONS || BUILT-IN STRING FUNCTIONS - PYTHON PROGRAMMING",
-        "ms": 5998
+        "ms": 4701
       },
       "triage": {
         "bucket": "alive",
@@ -2861,7 +2943,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Matplotlib Bar Plot - How to Plot a Bar Chart in Python using Matplotlib - Complete Tutorial",
-        "ms": 5952
+        "ms": 4997
       },
       "triage": {
         "bucket": "alive",
@@ -2916,7 +2998,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Matplotlib Scatter Plot - How to Create a Scatterplot in Python Matplotlib?  - Complete Tutorial",
-        "ms": 6000
+        "ms": 4999
       },
       "triage": {
         "bucket": "alive",
@@ -2971,7 +3053,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "HISTOGRAM CHART IN MATPLOTLIB - Learn HISTOGRAM PLOT IN MATPLOTLIB | Python Matplotlib Tutorial",
-        "ms": 6152
+        "ms": 4989
       },
       "triage": {
         "bucket": "alive",
@@ -3026,7 +3108,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Matplotlib Pie Chart / Plot - How to Create a Pie Chart in Python Matplotlib?  - Complete Tutorial",
-        "ms": 6023
+        "ms": 5529
       },
       "triage": {
         "bucket": "alive",
@@ -3081,7 +3163,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Matplotlib Tutorial (Part 1): Creating and Customizing Our First Plots",
-        "ms": 6009
+        "ms": 6002
       },
       "triage": {
         "bucket": "alive",
@@ -3136,7 +3218,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Seaborn Tutorial : Seaborn Full Course",
-        "ms": 6007
+        "ms": 5995
       },
       "triage": {
         "bucket": "alive",
@@ -3191,7 +3273,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Interactive Web Visualizations with Bokeh in Python",
-        "ms": 5997
+        "ms": 6002
       },
       "triage": {
         "bucket": "alive",
@@ -3246,7 +3328,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "LEARN PLOTLY - 3D PLOT",
-        "ms": 5998
+        "ms": 6007
       },
       "triage": {
         "bucket": "alive",
@@ -3301,7 +3383,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "LEARN PLOTLY - TIME SERIES",
-        "ms": 5844
+        "ms": 5996
       },
       "triage": {
         "bucket": "alive",
@@ -3356,7 +3438,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "LEARN PLOTLY - CREATING MAPS",
-        "ms": 5969
+        "ms": 6007
       },
       "triage": {
         "bucket": "alive",
@@ -3411,7 +3493,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Python Full Course for Beginners",
-        "ms": 6003
+        "ms": 6025
       },
       "triage": {
         "bucket": "alive",
@@ -3461,7 +3543,7 @@
         "finalDomain": "automatetheboringstuff.com",
         "offDomain": false,
         "title": "Automate the Boring Stuff with Python - Automate the Boring Stuff with Python",
-        "ms": 1349
+        "ms": 2143
       },
       "triage": {
         "bucket": "alive",
@@ -3514,7 +3596,7 @@
         "finalUrl": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
         "finalDomain": "greenteapress.com",
         "offDomain": false,
-        "ms": 3111
+        "ms": 3557
       },
       "triage": {
         "bucket": "alive",
@@ -3564,7 +3646,7 @@
         "finalDomain": "nptel.ac.in",
         "offDomain": false,
         "title": "",
-        "ms": 2229
+        "ms": 7284
       },
       "triage": {
         "bucket": "dead",
@@ -3580,22 +3662,23 @@
         "textSample": "NPTEL :: Computer Science and  Engineering - Design and Analysis of Algorithms. Toggle navigation About us Courses Contact us Courses Computer Science and Engineering Design and Analysis of Algorithms (Video) Syllabus Co-ordinated by : IIT Bombay Available from : 2009-12-31 Lec :1 Modules / Lectures Design and Analysis of Algorithms Overview of the course Framework for Algorithms Analysis Algorithms Analysis Framework - II Asymptotic Notations Algorithm Design Techniques : Basics Divide And Conquer-I Divide And Conquer -II Median Finding Divide And Conquer -III Surfing Lower Bounds Divide And Conquer -IV Closest Pair Greedy Algorithms -I Greedy Algorithms - II Greedy Algorithms - III Greedy Algorithms - IV Pattern Matching - I Pattern Matching - II Combinational Search and Optimization I Combinational Search and Optimization II Dynamic Programming Longest Common Subsequences Matrix Chain Multiplication Scheduling with Startup and Holding Costs Average case Analysis of Quicksort Bipartite Maximum Matching Lower Bounds for Sorting Element Distinctness Lower Bounds NP-Completeness-I -Motivation NP - Completeness - II NP-Completeness - III NP-Completeness - IV NP-Completeness - V NP-Completeness - VI Approximation Algorithms Approximation Algorithms Approximation Algorithms for NP Watch on YouTube Assignments Transcripts Books Module Name Download English Sl.No Chapter Name English 1 Overview of the course PDF unavailable 2 Framework for Algorithms Analysis PDF unavailable 3 Algo"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "reincarnated",
-        "confidence": 0.7,
+        "confidence": 1,
         "evidence": [
           {
             "quote": "HTTP 404",
             "source": "probe"
           },
           {
-            "quote": "capture 20210411040319",
+            "quote": "NPTEL :: Computer Science and Engineering - Design and Analysis of Algorithms.",
             "source": "wayback"
           }
         ],
         "resurrection_url": "https://web.archive.org/web/20210411040319/https://nptel.ac.in/courses/106/101/106101060/",
-        "ojha_note_hinglish": "Asli page toh chal basa, par 2021 ki copy Wayback pe zinda hai. Yeh wala link use karo."
+        "ojha_note_hinglish": "Link bhoot ban gaya tha, par maine ise wapas bula liya hai. Wayback se padhai shuru karo!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -3625,7 +3708,7 @@
         "finalDomain": "cse01-iiith.vlabs.ac.in",
         "offDomain": false,
         "title": "",
-        "ms": 889
+        "ms": 952
       },
       "triage": {
         "bucket": "dead",
@@ -3641,22 +3724,23 @@
         "textSample": "Welcome to Virtual Labs - A MHRD Govt of india Initiative. HOME PARTNERS CONTACT Computer Science and Engineering Introduction Objective List of experiments Target Audience Course Alignment Feedback Introduction Objective List of experiments Target Audience Course Alignment Feedback Data Structures To understand how various data structures work. To understand some important applictions of various data structures. To familiarize how certain applications can benefit from the choice of data structures. Community Links Sakshat Portal Outreach Portal FAQ: Virtual Labs Contact Us Phone: General Information: 011-26582050 Email: support@vlabs.ac.in Follow Us AGPL 3.0 & Creative Commons (CC BY-NC-SA 4.0)"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "reincarnated",
-        "confidence": 0.7,
+        "confidence": 1,
         "evidence": [
           {
             "quote": "HTTP 500 server error",
             "source": "probe"
           },
           {
-            "quote": "capture 20240915124920",
+            "quote": "Welcome to Virtual Labs - A MHRD Govt of india Initiative.",
             "source": "wayback"
           }
         ],
         "resurrection_url": "https://web.archive.org/web/20240915124920/https://cse01-iiith.vlabs.ac.in/",
-        "ojha_note_hinglish": "Asli page toh chal basa, par 2024 ki copy Wayback pe zinda hai. Yeh wala link use karo."
+        "ojha_note_hinglish": "Server thoda bimar hai, par tension mat lo, Wayback se kaam chal jayega!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -3690,7 +3774,7 @@
         "finalDomain": "www.themathpage.com",
         "offDomain": false,
         "title": "Free Online Math Courses. Artithmetic through Calculus.",
-        "ms": 924
+        "ms": 907
       },
       "triage": {
         "bucket": "suspicious",
@@ -3700,18 +3784,22 @@
       },
       "render": {
         "url": "http://www.themathpage.com/",
-        "finalUrl": "https://www.themathpage.com/",
+        "finalUrl": "http://www.themathpage.com/",
         "title": "Free Online Math Courses. Artithmetic through Calculus.",
-        "topic": "",
-        "language": "",
+        "topic": "A collection of free online math courses covering arithmetic, algebra, geometry, and calculus.",
+        "language": "English",
         "gambling": false,
         "casino": false,
         "parked": false,
-        "signals": [],
-        "textSample": "A complete course.Tour Colleges Book I of Euclid's Elements culminating in the Pythagorean theorem, A complete course. E-mail: themathpage@yandex.com Discover more Math Tutor Service Educational Math Games Math Problem Solver",
+        "signals": [
+          "page:Free Online Math Courses. Artithmetic through Calculus.",
+          "page:Skill in Arithmetic A complete course.",
+          "page:Topics in Trigonometry Topics in precalculus An approach to calculus"
+        ],
+        "textSample": "A complete course.Learn Trades Book I of Euclid's Elements culminating in the Pythagorean theorem, A complete course. E-mail: themathpage@yandex.com Discover more Math Tutor Service Educational Math Games Math Problem Solver",
         "screenshot": "shots/9878ef7a32.jpg",
-        "extractedBy": "heuristic",
-        "ms": 6226
+        "extractedBy": "stagehand",
+        "ms": 31715
       },
       "wayback": {
         "found": false,
@@ -3719,18 +3807,23 @@
         "error": "no clean capture in the newest snapshots"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "alive",
-        "confidence": 0.6,
+        "confidence": 1,
         "evidence": [
           {
             "quote": "Free Online Math Courses. Artithmetic through Calculus.",
-            "source": "render"
+            "source": "probe"
+          },
+          {
+            "quote": "A complete course. Book I of Euclid's Elements culminating in the Pythagorean theorem",
+            "source": "probe"
           }
         ],
         "resurrection_url": null,
-        "ojha_note_hinglish": "JavaScript chalne ke baad asli page dikh gaya, koi bhoot nahi. Link theek hai."
+        "ojha_note_hinglish": "Fikar mat kar beta, link ekdum zinda hai. Padhai pe dhyan de!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -3764,7 +3857,7 @@
         "finalDomain": "www.abstractmath.org",
         "offDomain": false,
         "title": "",
-        "ms": 291
+        "ms": 316
       },
       "triage": {
         "bucket": "dead",
@@ -3780,22 +3873,23 @@
         "textSample": "Abmath Index. abstractmath.org 2.0 help with abstract math Produced by Charles Wells Abstractmath.org Detailed Table of Contents Index Glossary Introduction Attitude Diagnostic Examples The languages of math Mathematical Reasoning Understanding math Doing math Numbers Sets Functions Derivatives Category theory Blog Mathematica notebooks Articles All the work on this site is licensed under a Creative Commons Attribution-ShareAlike 2.5 License ."
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "reincarnated",
-        "confidence": 0.7,
+        "confidence": 1,
         "evidence": [
           {
-            "quote": "HTTP 522 server error",
+            "quote": "error code: 522",
             "source": "probe"
           },
           {
-            "quote": "capture 20260718223322",
+            "quote": "Abmath Index. abstractmath.org 2.0 help with abstract math",
             "source": "wayback"
           }
         ],
         "resurrection_url": "https://web.archive.org/web/20260718223322/https://abstractmath.org/",
-        "ojha_note_hinglish": "Asli page toh chal basa, par 2026 ki copy Wayback pe zinda hai. Yeh wala link use karo."
+        "ojha_note_hinglish": "Link bhoot ban gaya tha, par Wayback ne ise wapas zinda kar diya. Ab tension mat lo!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -3809,51 +3903,57 @@
         "chain": [
           {
             "url": "http://www.ocw.mit.edu/courses/mathematics/",
-            "status": 0
-          },
-          {
-            "url": "https://www.ocw.mit.edu/courses/mathematics/",
-            "status": 307
-          },
-          {
-            "url": "https://www.ocw.mit.edu/search/?d=Mathematics&s=department_course_numbers.sort_coursenum",
-            "status": 200
+            "status": 500
           }
         ],
         "originalDomain": "www.ocw.mit.edu",
         "robotsBlocked": false,
-        "textSample": "menu Give Now About OCW Help & Faqs Contact Us GIVE NOW about ocw help & faqs contact us You are leaving MIT OpenCourseWare close Please be advised that external sites may have terms and conditions, including license rights, that differ from ours. MIT OCW is not responsible for any content on third party sites, nor does a link suggest an endorsement of those sites and/or their content. Stay Here Continue",
-        "textLength": 407,
-        "scriptCount": 5,
+        "textSample": "",
+        "textLength": 0,
+        "scriptCount": 0,
         "signals": [],
-        "ok": true,
-        "status": 200,
-        "contentType": "text/html",
-        "finalUrl": "https://www.ocw.mit.edu/search/?d=Mathematics&s=department_course_numbers.sort_coursenum",
+        "ok": false,
+        "status": 500,
+        "contentType": "",
+        "finalUrl": "http://www.ocw.mit.edu/courses/mathematics/",
         "finalDomain": "www.ocw.mit.edu",
         "offDomain": false,
-        "title": "Search | MIT OpenCourseWare | Free Online Course Materials",
-        "ms": 2155
+        "title": "",
+        "ms": 10092
       },
       "triage": {
-        "bucket": "alive",
+        "bucket": "dead",
         "reasons": [
-          "HTTP 200"
+          "HTTP 500 server error"
         ]
+      },
+      "wayback": {
+        "found": true,
+        "checked": 1,
+        "timestamp": "20220325115542",
+        "snapshotUrl": "https://web.archive.org/web/20220325115542/https://ocw.mit.edu/courses/mathematics/",
+        "textSample": "Mathematics | MIT OpenCourseWare | Free Online Course Materials. Subscribe to the OCW Newsletter Help | Contact Us FIND COURSES Find courses by: Topic MIT Course Number Department Collections New Courses Most Visited Courses OCW Scholar Courses Audio/Video Lectures Online Textbooks Supplemental Resources OCW Highlights for High School MITx & Related OCW Courses MIT Open Learning Library Cross-Disciplinary Topic Lists Energy Entrepreneurship Environment Introductory Programming Life Sciences Transportation Translated Courses 繁體字 / Traditional Chinese Türkçe / Turkish (비디오)한국 / Korean For Educators Chalk Radio Podcast OCW Educator Portal Instructor Insights by Department Residential Digital Innovations OCW Highlights for High School Additional Resources Give Now Make a Donation Why Give? Our Supporters Other Ways to Contribute Become a Corporate Sponsor About About MIT OpenCourseWare Site Statistics OCW Stories Newsletter Chalk Radio Podcast Open Matters Blog Search Tips X Exclude words from your search Put - in front of a word you want to leave out. For example, jaguar speed -car Search for an exact match Put a word or phrase inside quotes. For example, \"tallest building\". Search for wildcards or unknown words Put a * in your word or phrase where you want to leave a placeholder. For example, \"largest * in the world\". Search within a range of numbers Put .. between two numbers. For example, camera $50..$100. Combine searches Put \"OR\" between each search query. For example, mara"
       },
       "verdict": {
         "by": "rules",
         "attempts": 0,
-        "status": "alive",
-        "confidence": 0.9,
+        "status": "reincarnated",
+        "confidence": 0.7,
         "evidence": [
           {
-            "quote": "HTTP 200",
+            "quote": "HTTP 500 server error",
             "source": "probe"
+          },
+          {
+            "quote": "capture 20220325115542",
+            "source": "wayback"
           }
         ],
-        "resurrection_url": null,
-        "ojha_note_hinglish": "Link zinda hai, tension mat lo. Padhai shuru karo."
+        "resurrection_url": "https://web.archive.org/web/20220325115542/https://ocw.mit.edu/courses/mathematics/",
+        "ojha_note_hinglish": "Asli page toh chal basa, par 2022 ki copy Wayback pe zinda hai. Yeh wala link use karo.",
+        "rejected": [
+          "llm error: Failed after 3 attempts. Last error: Internal error encountered."
+        ]
       }
     },
     {
@@ -3887,7 +3987,7 @@
         "finalDomain": "ocw.mit.edu",
         "offDomain": false,
         "title": "Linear Algebra | Mathematics | MIT OpenCourseWare",
-        "ms": 2284
+        "ms": 1698
       },
       "triage": {
         "bucket": "alive",
@@ -3936,7 +4036,7 @@
         "finalUrl": "https://www.math.ucdavis.edu/~linear/linear.pdf",
         "finalDomain": "www.math.ucdavis.edu",
         "offDomain": false,
-        "ms": 2250
+        "ms": 2283
       },
       "triage": {
         "bucket": "alive",
@@ -3975,8 +4075,8 @@
         ],
         "originalDomain": "www.coursera.org",
         "robotsBlocked": false,
-        "textSample": "For Individuals For Businesses For Universities For Governments Explore Degrees ​ Log In Join for Free Join for Free Mathematics for Machine Learning: Linear Algebra About Outcomes Modules Recommendations Testimonials Reviews Previous Next Categories Data Science Machine Learning Ends soon: Spark a year of growth with Coursera Plus , now ₹6,999 (₹583/month, billed annually). Mathematics for Machine Learning: Linear Algebra This course is part of Mathematics for Machine Learning Specialization Instructors: David Dye +2 more Enroll for free Starts Oct 29 482,828 already enrolled Included with • Learn more 5 modules Gain insight into a topic and learn the fundamentals. 4.6 12,618 reviews Beginner level No prior experience required Flexible schedule 2 weeks at 10 hours a week Learn at your own pace 5 modules Gain insight into a topic and learn the fundamentals. 4.6 12,618 reviews Beginner level No prior experience required Flexible schedule 2 weeks at 10 hours a week Learn at your own pace About Outcomes Modules Recommendations Testimonials Reviews Previous Next Skills you'll gain Data Science Machine Learning Data Transformation Linear Algebra Data Manipulation Applied Mathematics Details to know Shareable certificate Add to your LinkedIn profile Assessments 15 assignments Taught in French 26 languages available 91% Most learners liked this course See how employees at top companies are mastering in-demand skills Learn more about Coursera for Business Build your subject-matter ex",
-        "textLength": 4191,
+        "textSample": "For Individuals For Businesses For Universities For Governments Explore Degrees ​ Log In Join for Free Join for Free Mathematics for Machine Learning: Linear Algebra About Outcomes Modules Recommendations Testimonials Reviews Previous Next Categories Data Science Machine Learning Mathematics for Machine Learning: Linear Algebra This course is part of Mathematics for Machine Learning Specialization Instructors: David Dye +2 more Enroll for free Starts Oct 29 482,895 already enrolled Included with • Learn more 5 modules Gain insight into a topic and learn the fundamentals. 4.6 12,618 reviews Beginner level No prior experience required Flexible schedule 2 weeks at 10 hours a week Learn at your own pace 5 modules Gain insight into a topic and learn the fundamentals. 4.6 12,618 reviews Beginner level No prior experience required Flexible schedule 2 weeks at 10 hours a week Learn at your own pace About Outcomes Modules Recommendations Testimonials Reviews Previous Next Skills you'll gain Applied Mathematics Data Manipulation Data Transformation Linear Algebra Data Science Machine Learning Details to know Shareable certificate Add to your LinkedIn profile Assessments 15 assignments Taught in French 26 languages available 91% Most learners liked this course See how employees at top companies are mastering in-demand skills Learn more about Coursera for Business Build your subject-matter expertise This course is part of the Mathematics for Machine Learning Specialization When you enrol",
+        "textLength": 4046,
         "scriptCount": 9,
         "signals": [],
         "ok": true,
@@ -3986,7 +4086,7 @@
         "finalDomain": "www.coursera.org",
         "offDomain": false,
         "title": "Mathematics for Machine Learning: Linear Algebra | Coursera",
-        "ms": 3293
+        "ms": 2016
       },
       "triage": {
         "bucket": "alive",
@@ -4036,7 +4136,7 @@
         "finalDomain": "nptel.ac.in",
         "offDomain": false,
         "title": "",
-        "ms": 3855
+        "ms": 6922
       },
       "triage": {
         "bucket": "dead",
@@ -4052,22 +4152,23 @@
         "textSample": "NPTEL Phase II :: Mathematics - Linear Algebra. Syllabus | Lectures | Downloads | FAQ | Ask a question | Course Co-ordinated by IIT Madras NPTEL >> Courses >> Mathematics >> Linear Algebra (Video) >> Syllabus Coordinators Dr. K.C. Sivakumar IIT Madras Download Syllabus in PDF format Syllabus References Untitled Document COURSE OUTLINE Systems of linear equations, Matrices, Elementary row operations, Row-reduced echelon matrices. Vector spaces, Subspaces, Bases and dimension, Ordered bases and coordinates. Linear transformations, Rank-nullity theorem, Algebra of linear transformations, Isomorphism, Matrix representation, Linear functionals, Annihilator, Double dual, Transpose of a linear transformation. Characteristic values and characteristic vectors of linear transformations, Diagonalizability, Minimal polynomial of a linear transformation, Cayley-Hamilton theorem, Invariant subspaces, Direct-sum decompositions, Invariant direct sums, The primary decomposition theorem, Cyclic subspaces and annihilators, Cyclic decomposition, Rational, Jordan forms. Inner product spaces, Orthonormal bases, Gram-Schmidt process. COURSE DETAIL Lectures Topic 1 Introduction to the Course Contents. 2 Linear Equations 3a Equivalent Systems of Linear Equations I: Inverses of Elementary Row-operations, Row-equivalent matrices 3b Equivalent Systems of Linear Equations II: Homogeneous Equations, Examples 4 Row-reduced Echelon Matrices 5 Row-reduced Echelon Matrices and Non-homogeneous Equations 6 Elem"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "reincarnated",
-        "confidence": 0.7,
+        "confidence": 1,
         "evidence": [
           {
             "quote": "HTTP 404",
             "source": "probe"
           },
           {
-            "quote": "capture 20171209074943",
+            "quote": "NPTEL Phase II :: Mathematics - Linear Algebra. Syllabus | Lectures | Downloads | FAQ",
             "source": "wayback"
           }
         ],
         "resurrection_url": "https://web.archive.org/web/20171209074943/http://nptel.ac.in:80/syllabus/111106051/",
-        "ojha_note_hinglish": "Asli page toh chal basa, par 2017 ki copy Wayback pe zinda hai. Yeh wala link use karo."
+        "ojha_note_hinglish": "Link gayab tha, par maine ise Wayback se wapas bula liya. Ab padhai shuru karo!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -4097,7 +4198,7 @@
         "finalDomain": "github.com",
         "offDomain": false,
         "title": "GitHub - epfml/OptML_course: EPFL Course - Optimization for Machine Learning - CS-439 · GitHub",
-        "ms": 1849
+        "ms": 3853
       },
       "triage": {
         "bucket": "alive",
@@ -4152,7 +4253,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "OptML course EPFL CS-439",
-        "ms": 5999
+        "ms": 6001
       },
       "triage": {
         "bucket": "alive",
@@ -4207,7 +4308,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Concept of Green IT",
-        "ms": 5998
+        "ms": 6001
       },
       "triage": {
         "bucket": "alive",
@@ -4259,7 +4360,7 @@
         "finalUrl": "https://www.youtube.com/watch?v=kxngsYn5N3Y",
         "finalDomain": "www.youtube.com",
         "offDomain": false,
-        "ms": 6008
+        "ms": 6017
       },
       "triage": {
         "bucket": "alive",
@@ -4314,7 +4415,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Green IT - Environmental Impact of Information Technology",
-        "ms": 6036
+        "ms": 6029
       },
       "triage": {
         "bucket": "alive",
@@ -4364,7 +4465,7 @@
         "finalDomain": "www.brightest.io",
         "offDomain": false,
         "title": "Sustainability Measurement - How to Measure Environmental Performance | Brightest",
-        "ms": 748
+        "ms": 653
       },
       "triage": {
         "bucket": "alive",
@@ -4419,7 +4520,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Sustainability in the Cloud",
-        "ms": 6001
+        "ms": 6022
       },
       "triage": {
         "bucket": "alive",
@@ -4471,7 +4572,7 @@
         "finalUrl": "https://www.youtube.com/watch?v=w0cD26CLBA0",
         "finalDomain": "www.youtube.com",
         "offDomain": false,
-        "ms": 5992
+        "ms": 5980
       },
       "triage": {
         "bucket": "dead",
@@ -4480,18 +4581,23 @@
         ]
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "ghost",
-        "confidence": 0.8,
+        "confidence": 1,
         "evidence": [
+          {
+            "quote": "HTTP 404",
+            "source": "probe"
+          },
           {
             "quote": "YouTube oEmbed 404: video removed or never existed",
             "source": "probe"
           }
         ],
         "resurrection_url": null,
-        "ojha_note_hinglish": "Yeh link mar chuka hai aur archive mein bhi aatma nahi mili. Naya resource dhoondna padega."
+        "ojha_note_hinglish": "Video toh bhoot ban gaya, beta. Ye link ab kaam nahi karega.",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -4526,7 +4632,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Capacity Planning - Overview and Key Concepts",
-        "ms": 6022
+        "ms": 6042
       },
       "triage": {
         "bucket": "alive",
@@ -4581,7 +4687,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Saviom Enterprise Resource Management",
-        "ms": 6004
+        "ms": 6005
       },
       "triage": {
         "bucket": "alive",
@@ -4636,7 +4742,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Measurement and KPIs for APIs",
-        "ms": 5983
+        "ms": 5981
       },
       "triage": {
         "bucket": "alive",
@@ -4691,7 +4797,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "IT Networking Tutorial - Virtualization and cloud computing",
-        "ms": 5966
+        "ms": 5980
       },
       "triage": {
         "bucket": "alive",
@@ -4746,7 +4852,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Virtualization in Cloud Computing | What is Virtualization | Intellipaat",
-        "ms": 5998
+        "ms": 6069
       },
       "triage": {
         "bucket": "alive",
@@ -4796,7 +4902,7 @@
         "finalDomain": "www.freecodecamp.org",
         "offDomain": false,
         "title": "UI / UX Design Tutorial – From Zero to Hero with Wireframe + Prototype + Design in Figma",
-        "ms": 282
+        "ms": 304
       },
       "triage": {
         "bucket": "alive",
@@ -4836,7 +4942,7 @@
         "originalDomain": "www.edureka.co",
         "robotsBlocked": false,
         "textSample": "Subscribe Training in Top Technologies Advanced Certification in Agentic AI Engineering Advanced Certification in Data Engineering with GenAI Advanced Certification in AI Product Management Post Graduate Program in Generative AI and Agentic AI All Courses Career Related Programs Doctor of Business Administration by Birchwood European Global Doctorate of Business Administration (DBA) European Global MS in Data Science and AI EIMT Doctorate in Computer Science (DCS) Doctorate in Business Administration (DBA) by EIMT MS in Data Science by Birchwood Master of Computer Science by LSMT London All Courses Webinars Ebook NEW Explore Online Courses Subscribe Become a Certified Professional Back Home Categories Online Courses Webinars Ebook NEW Community Categories Artificial Intelligence AI vs Machine Learning vs Deep Learning Machine Learning Algorithms Artificial Intelligence Tutorial What is Deep Learning Deep Learning Tutorial Install TensorFlow Deep Learning with Python Backpropagation TensorFlow Tutorial Convolutional Neural Network Tutorial VIEW ALL BI and Visualization What is Tableau Tableau Tutorial Tableau Interview Questions What is Informatica Informatica Interview Questions Power BI Tutorial Power BI Interview Questions OLTP vs OLAP QlikView Tutorial Advanced Excel Formulas Tutorial VIEW ALL Big Data What is Hadoop Hadoop Architecture Hadoop Tutorial Hadoop Interview Questions Hadoop Ecosystem Data Science vs Big Data vs Data Analytics What is Big Data MapReduce Tutorial",
-        "textLength": 28835,
+        "textLength": 28758,
         "scriptCount": 29,
         "signals": [],
         "ok": true,
@@ -4846,7 +4952,7 @@
         "finalDomain": "www.edureka.co",
         "offDomain": false,
         "title": "UI UX Design Tutorial - A Complete Guide for Beginners | Edureka",
-        "ms": 4510
+        "ms": 6103
       },
       "triage": {
         "bucket": "alive",
@@ -4896,7 +5002,7 @@
         "finalDomain": "www.udemy.com",
         "offDomain": false,
         "title": "Just a moment...",
-        "ms": 142
+        "ms": 117
       },
       "triage": {
         "bucket": "blocked",
@@ -4946,7 +5052,7 @@
         "finalDomain": "latex-tutorial.com",
         "offDomain": false,
         "title": "A simple guide to LaTeX - Step by Step - LaTeX-Tutorial.com",
-        "ms": 2442
+        "ms": 1669
       },
       "triage": {
         "bucket": "alive",
@@ -4990,7 +5096,7 @@
         "finalUrl": "https://www.javatpoint.com/latex",
         "finalDomain": "www.javatpoint.com",
         "offDomain": false,
-        "ms": 27
+        "ms": 84
       },
       "triage": {
         "bucket": "dead",
@@ -5006,22 +5112,23 @@
         "textSample": "LaTeX Tutorial - Javatpoint. Tutorials × Python Python Django Numpy Pandas Tkinter Pytorch Flask OpenCV AI, ML and Data Science Artificial Intelligence Machine Learning Data Science Deep Learning TensorFlow Artificial Neural Network Matplotlib Python Scipy Java Java Servlet JSP Spring Boot Spring Framework Hibernate JavaFX Java Web Services B.Tech and MCA DBMS Data Structures Operating System Computer Network DAA Computer Organization Software Engineering Data Mining Web Technology HTML CSS JavaScript Jquery Angular-8 React JS React Native Node JS Software Testing Software Testing Selenium JIRA JMeter Postman TestNG SoapUI Cucumber Interview × Technical Interview C C++ Php Java Python JavaScript TypeScript Java Interview JDBC Servlet Maven Jenkins Spring Spring Boot JDB Hibernate JSF Web Interview HTML CSS JavaScript Jquery Angular Node-JS AJAX Database Interview DBMS SQL PL/SQL Oracle MySQL MongoDB Redis MariaDB Company Interviews IBM Adobe Microsoft Amazon TCS HCL Wipro DXC Accenture Capgemini Space X Ericsson Infosy IGate EXL IndiaMART Sapient Compiler Python Java Php C C++ R Html Javascript Typescript Swift Home Python Java JavaScript HTML SQL PHP C# C++ DS Aptitude Reasoning Selenium DBMS C Andriod Interview Q Latex Tutorial Latex Tutorial Latex Introduction Download & Installation Texmaker Overview File types in Latex Latex Editors How to use Latex Latex Basics Latex Symbols Latex Lists Latex Fonts Latex Format Latex Table Latex Colors Latex Images Latex Figures Latex G"
       },
       "verdict": {
-        "by": "rules",
-        "attempts": 0,
         "status": "reincarnated",
-        "confidence": 0.7,
+        "confidence": 1,
         "evidence": [
           {
-            "quote": "no response (ECONNRESET)",
+            "quote": "error: ECONNRESET Client network socket disconnected before secure TLS connection was established",
             "source": "probe"
           },
           {
-            "quote": "capture 20241007174941",
+            "quote": "LaTeX Tutorial - Javatpoint. Tutorials",
             "source": "wayback"
           }
         ],
         "resurrection_url": "https://web.archive.org/web/20241007174941/https://www.javatpoint.com/latex",
-        "ojha_note_hinglish": "Asli page toh chal basa, par 2024 ki copy Wayback pe zinda hai. Yeh wala link use karo."
+        "ojha_note_hinglish": "Link bhoot ban gaya tha, par Wayback ne ise wapas zinda kar diya. Ye lo naya rasta!",
+        "by": "gemma",
+        "model": "gemma-4-26b-a4b-it",
+        "attempts": 1
       }
     },
     {
@@ -5051,7 +5158,7 @@
         "finalDomain": "infyspringboard.onwingspan.com",
         "offDomain": false,
         "title": "",
-        "ms": 251
+        "ms": 10
       },
       "triage": {
         "bucket": "suspicious",
@@ -5061,18 +5168,20 @@
       },
       "render": {
         "url": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_01384364250678886443375_shared/overview",
-        "finalUrl": "https://infyspringboard.onwingspan.com/web/en/login?ref=%2Fapp%2Ftoc%2Flex_auth_01384364250678886443375_shared%2Foverview",
-        "title": "Login | Infosys Springboard",
-        "topic": "",
-        "language": "",
+        "finalUrl": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_01384364250678886443375_shared/overview",
+        "title": "404 Not Found",
+        "topic": "Infosys Springboard access restricted by country",
+        "language": "English",
         "gambling": false,
         "casino": false,
         "parked": false,
-        "signals": [],
-        "textSample": "Page Loaded Login | Infosys Springboard Infosys Head Start About Us Focus Areas & Skills translate LOGIN The future of India will be shaped by today’s younger generation who need quality education through digital literacy, making them productive and self-reliant citizens. 'Digital literacy' is the skills required to achieve digital competence and use of Information and Communication Technology (ICT) for work, leisure, learning and communication. It does not replace traditional forms of literacy, instead complements and amplifies the skills that form the foundation of traditional forms. GET STARTED Core Skills Digital Skills Life Skills Behavioral Skills Life Long Learning Continuous Education About Infosys Springboard Infosys Springboard is a Digital literacy program launched as part of the Infosys ESG Tech for Good charter. It aims to enable students and associated communities from early education to lifelong learners by imparting digital and life skills through curated content & interventions, free of cost. Catch them young Program to introduce young minds to new technologies and its application in business and day-to-day life. Daily coding classes Learners can explore possibility of application of Technologies in real life Java, Python, C#, JavaScript and more.. Spoken English Learn to compete in global space, Learn spoken English and written English from the industry standard content. Technology Training College students and faculty can learn application of horizon 2 technologies from subject matter experts and Architects. Why Digital Literacy 1234 Learners can benefit from the knowledgebase and experience of 4 decades of Infosys as an enterprise. We also bring the quality content from our partners and leading universities across the world. Content is aligned with New Education policy 2020. Includes soft skills and vocational skills. history_edu arrow_left arrow_right Our Focus Areas & Skills \"Digital Literacy\" is the skills required to achieve digital competenc",
+        "signals": [
+          "page:You are trying access an instance of Infosys Springboard which is not accessible in your country."
+        ],
+        "textSample": "Dear Learner, You are trying access an instance of Infosys Springboard which is not accessible in your country. For your convenience we have listed the geo specific Infosys Springboard URLs: For Springboard US: https://infyspringboard.us.onwingspan.com For Springboard Europe: https://infyspringboard.eu.onwingspan.com For Springboard Australia New Zealand: https://infosysspringboard.ausnz.onwingspan.com",
         "screenshot": "shots/01bd83ff53.jpg",
-        "extractedBy": "heuristic",
-        "ms": 5039
+        "extractedBy": "stagehand",
+        "ms": 83312
       },
       "wayback": {
         "found": true,
@@ -5084,16 +5193,19 @@
       "verdict": {
         "by": "rules",
         "attempts": 0,
-        "status": "unsure",
-        "confidence": 0.4,
+        "status": "alive",
+        "confidence": 0.6,
         "evidence": [
           {
-            "quote": "https://infyspringboard.onwingspan.com/web/en/login?ref=%2Fapp%2Ftoc%2Flex_auth_01384364250678886443375_shared%2Foverview",
+            "quote": "404 Not Found",
             "source": "render"
           }
         ],
         "resurrection_url": null,
-        "ojha_note_hinglish": "Page login ke peeche chhupa hai. Bina account ke students ko kuch nahi dikhega, yeh syllabus mein likhna chahiye."
+        "ojha_note_hinglish": "JavaScript chalne ke baad asli page dikh gaya, koi bhoot nahi. Link theek hai.",
+        "rejected": [
+          "llm error: The operation was aborted due to timeout"
+        ]
       }
     },
     {
@@ -5123,7 +5235,7 @@
         "finalDomain": "infyspringboard.onwingspan.com",
         "offDomain": false,
         "title": "",
-        "ms": 590
+        "ms": 9
       },
       "triage": {
         "bucket": "suspicious",
@@ -5133,18 +5245,21 @@
       },
       "render": {
         "url": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_0130944433473699842782_shared/overview",
-        "finalUrl": "https://infyspringboard.onwingspan.com/web/en/login?ref=%2Fapp%2Ftoc%2Flex_auth_0130944433473699842782_shared%2Foverview",
-        "title": "",
-        "topic": "",
-        "language": "",
+        "finalUrl": "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_0130944433473699842782_shared/overview",
+        "title": "404 Not Found",
+        "topic": "Infosys Springboard access error due to geographic restrictions",
+        "language": "English",
         "gambling": false,
         "casino": false,
         "parked": false,
-        "signals": [],
-        "textSample": "",
+        "signals": [
+          "page:You are trying access an instance of Infosys Springboard which is not accessible in your country.",
+          "page:For your convenience we have listed the geo specific Infosys Springboard URLs:"
+        ],
+        "textSample": "Dear Learner, You are trying access an instance of Infosys Springboard which is not accessible in your country. For your convenience we have listed the geo specific Infosys Springboard URLs: For Springboard US: https://infyspringboard.us.onwingspan.com For Springboard Europe: https://infyspringboard.eu.onwingspan.com For Springboard Australia New Zealand: https://infosysspringboard.ausnz.onwingspan.com",
         "screenshot": "shots/6048202ca6.jpg",
-        "extractedBy": "heuristic",
-        "ms": 4721
+        "extractedBy": "stagehand",
+        "ms": 20556
       },
       "wayback": {
         "found": true,
@@ -5156,16 +5271,19 @@
       "verdict": {
         "by": "rules",
         "attempts": 0,
-        "status": "unsure",
-        "confidence": 0.4,
+        "status": "alive",
+        "confidence": 0.6,
         "evidence": [
           {
-            "quote": "https://infyspringboard.onwingspan.com/web/en/login?ref=%2Fapp%2Ftoc%2Flex_auth_0130944433473699842782_shared%2Foverview",
+            "quote": "404 Not Found",
             "source": "render"
           }
         ],
         "resurrection_url": null,
-        "ojha_note_hinglish": "Page login ke peeche chhupa hai. Bina account ke students ko kuch nahi dikhega, yeh syllabus mein likhna chahiye."
+        "ojha_note_hinglish": "JavaScript chalne ke baad asli page dikh gaya, koi bhoot nahi. Link theek hai.",
+        "rejected": [
+          "llm error: The operation was aborted due to timeout"
+        ]
       }
     },
     {
@@ -5200,7 +5318,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#10 Python Tutorial for Beginners | Data Types in Python",
-        "ms": 5995
+        "ms": 5994
       },
       "triage": {
         "bucket": "alive",
@@ -5255,7 +5373,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#11 Python Tutorial for Beginners | Operators in Python",
-        "ms": 5979
+        "ms": 5965
       },
       "triage": {
         "bucket": "alive",
@@ -5310,7 +5428,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#19 Python Tutorial for Beginners | If Elif Else Statement in Python",
-        "ms": 5996
+        "ms": 6011
       },
       "triage": {
         "bucket": "alive",
@@ -5365,7 +5483,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#21 Python Tutorial for Beginners | For Loop in Python",
-        "ms": 6009
+        "ms": 6155
       },
       "triage": {
         "bucket": "alive",
@@ -5420,7 +5538,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#20 Python Tutorial for Beginners | While Loop in Python",
-        "ms": 6004
+        "ms": 5994
       },
       "triage": {
         "bucket": "alive",
@@ -5475,7 +5593,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#63 Python Tutorial for Beginners | Exception Handling",
-        "ms": 6003
+        "ms": 5915
       },
       "triage": {
         "bucket": "alive",
@@ -5530,7 +5648,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#32 Python Tutorial for Beginners | Functions in Python",
-        "ms": 6063
+        "ms": 6001
       },
       "triage": {
         "bucket": "alive",
@@ -5585,7 +5703,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#33 Python Tutorial for Beginners | Function Arguments in Python",
-        "ms": 5998
+        "ms": 5997
       },
       "triage": {
         "bucket": "alive",
@@ -5640,7 +5758,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Return Statement | Python | Tutorial 15",
-        "ms": 5996
+        "ms": 5980
       },
       "triage": {
         "bucket": "alive",
@@ -5695,7 +5813,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Python Strings Tutorial | How To Use Strings In Python | Python Tutorial | Python Training | Edureka",
-        "ms": 5995
+        "ms": 5845
       },
       "triage": {
         "bucket": "alive",
@@ -5750,7 +5868,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "STRING METHODS & OPERATIONS || BUILT-IN STRING FUNCTIONS - PYTHON PROGRAMMING",
-        "ms": 5995
+        "ms": 6000
       },
       "triage": {
         "bucket": "alive",
@@ -5805,7 +5923,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "HISTOGRAM CHART IN MATPLOTLIB - Learn HISTOGRAM PLOT IN MATPLOTLIB | Python Matplotlib Tutorial",
-        "ms": 6000
+        "ms": 6020
       },
       "triage": {
         "bucket": "alive",
@@ -5860,7 +5978,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "#55 Python Tutorial for Beginners | Inheritance",
-        "ms": 5940
+        "ms": 5998
       },
       "triage": {
         "bucket": "alive",
@@ -5915,7 +6033,7 @@
         "finalDomain": "www.youtube.com",
         "offDomain": false,
         "title": "Python Full Course for Beginners",
-        "ms": 6012
+        "ms": 5995
       },
       "triage": {
         "bucket": "alive",
